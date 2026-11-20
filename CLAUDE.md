@@ -4,7 +4,10 @@
 
 ## 기술 스택
 
-- (확정 후 여기에 기록. 예: 프론트 / 백엔드 / 모델 API)
+- 프론트: React 18 + Vite 5
+- 백엔드: Supabase (Postgres, Edge Functions)
+- 모델: Claude Vision (`claude-opus-5-5`), 오픈소스 OCR(PP-OCRv5)은 당일 비교 후 결정
+- 상세 계획: `개발계획.md`
 
 ## 역할과 담당 영역
 
