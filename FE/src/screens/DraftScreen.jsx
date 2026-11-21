@@ -58,7 +58,7 @@ export function DraftForm({ onDone, submitText = '확인하고 혜택 보기', i
         </fieldset>
         <fieldset className="ws-ui-fieldset">
           <legend>성별 (선택)</legend>
-          <div className="wm-grid wm-grid-2">
+          <div className="wm-gender">
             {['남', '여'].map((g) => (
               <label key={g} className="wm-gender-option">
                 <input type="radio" name="gender" checked={f.gender === g} onChange={() => set({ gender: g })} /> {g}

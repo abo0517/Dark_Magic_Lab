@@ -257,9 +257,13 @@ export default function App() {
       >
         <details className="wm-disclosure" open={isApplied}>
           <summary>혜택 설명 · 신청 조건 확인</summary>
-          <p>{program.summary || '저장된 상세 설명이 없어요. 제출처에서 제도 내용을 다시 확인해 주세요.'}</p>
-          {program.eligibility && <p className="ws-ui-note">{program.eligibility}</p>}
-          {program.source && <p className="ws-ui-muted">출처: {program.source}</p>}
+          <p className="wm-brief">{program.summary || '저장된 상세 설명이 없어요. 제출처에서 제도 내용을 다시 확인해 주세요.'}</p>
+          {program.eligibility && (
+            <ul className="wm-brief-list">
+              {program.eligibility.split(/\.\s+/).map((t) => <li key={t}>{t.replace(/\.$/, '')}</li>)}
+            </ul>
+          )}
+          {program.source && <p className="wm-brief-src">출처: {program.source}</p>}
         </details>
         <Program program={program} today={koreanDate()} />
         <details className="wm-disclosure">
