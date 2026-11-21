@@ -5,13 +5,26 @@ import { mockCatalog, mockResult } from '../mock.js'
 import { ageText, buildAlerts, daysLeft, judge, koreanDate } from '../alerts.js'
 import { fetchPolicies, hasBackend } from '../api.js'
 
-const CATEGORIES = ['연금', '지원금', '대출', '돌봄/서비스']
+const MAX_SHOWN = 30
+const GROUPS = [
+  ['생활·금융', '💰', ['서민금융', '생활지원'], /연금|대출|융자|수당|지원금|바우처/],
+  ['주거·에너지', '🏠', ['주거', '에너지'], /주거|임대|월세|전세|난방|에너지/],
+  ['임신·출산·보육', '👶', ['임신·출산', '보육', '입양·위탁'], /출산|임산부|산모|신생아|보육|양육|영유아|아동/],
+  ['교육', '🎓', ['교육'], /교육|학자금|장학|학습/],
+  ['일자리', '💼', ['일자리'], /일자리|취업|창업|고용/],
+  ['건강', '🩺', ['신체건강', '정신건강'], /건강|접종|검진|치료|의료|재활/],
+  ['돌봄·안전', '🤝', ['보호·돌봄', '안전·위기', '법률'], /돌봄|서비스|요양|안부|활동지원|위기|폭력|노숙/],
+  ['문화·여가', '🎭', ['문화·여가'], /문화|여가|체육|관광/],
+]
+const OTHER = ['기타', '📌']
+export const CATEGORIES = [...GROUPS.map(([label, icon]) => [label, icon]), OTHER]
+export const iconOf = (label) => CATEGORIES.find(([l]) => l === label)?.[1] ?? ''
 
 export function categoryOf(p) {
-  if (p.name.includes('연금')) return '연금'
-  if (/대출|융자/.test(p.name)) return '대출'
-  if (/돌봄|서비스|요양/.test(p.name)) return '돌봄/서비스'
-  return '지원금'
+  const themes = (p.category ?? '').split(',').map((t) => t.trim())
+  const g = [...GROUPS.slice(1), GROUPS[0]].find(([, , list]) => themes.some((t) => list.includes(t)))
+  if (g) return g[0]
+  return (GROUPS.find(([, , , re]) => re.test(p.name)) ?? OTHER)[0]
 }
 
 function Slider({ items, idx, setIdx, favorites, onFavorite, onOpen }) {
@@ -98,7 +111,10 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
   const real = (cat.rows ?? []).filter(mine)
   const sample = !loading && real.length === 0
   const list = sample ? mockResult.programs.filter(mine).map((p) => ({ ...p, isSample: true })) : real
-  const shown = list.filter((p) => category === '전체' || categoryOf(p) === category)
+  const matched = [...new Map(list.map((p) => [p.name, p])).values()]
+    .filter((p) => category === '전체' || categoryOf(p) === category)
+    .sort((a, b) => Number(b.gu === profile.gu) - Number(a.gu === profile.gu))
+  const shown = matched.slice(0, MAX_SHOWN)
   const current = Math.min(idx, Math.max(0, shown.length - 1))
 
   useEffect(() => {
@@ -186,7 +202,7 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
       )}
       {sample && <p className="ws-ui-note" role="note">현재 신청 가능한 실제 혜택이 없어 이해를 돕기 위한 가데이터 예시를 보여드려요.</p>}
       <div className="wm-category-row">
-        <strong>{category ?? '카테고리를 선택해 주세요'}</strong>
+        <strong>{category ? `${category === '전체' ? '🗂️' : iconOf(category)} ${category}` : '카테고리를 선택해 주세요'}</strong>
         <button ref={triggerRef} type="button" className="ws-ui-button ws-ui-secondary" onClick={() => dialogRef.current.showModal()}>다른 카테고리 살펴보기</button>
       </div>
       {cat.error && <p className="ws-ui-error" role="alert">혜택 목록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p>}
@@ -199,6 +215,9 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
           <p>다른 카테고리를 선택하거나 안내문을 촬영해 주세요.</p>
         </Card>
       )}
+      {matched.length > shown.length && (
+        <p className="ws-ui-muted">혜택이 많아서 앞의 {MAX_SHOWN}개만 보여드려요. 다른 카테고리도 살펴보세요.</p>
+      )}
       <p className="ws-ui-muted wm-privacy">소득·거주 조건에 따라 실제 대상은 다를 수 있어요.</p>
 
       <dialog ref={dialogRef} className="wm-dialog" aria-labelledby="wm-cat-title" onCancel={(e) => { e.preventDefault(); closeCategories() }}>
@@ -208,8 +227,9 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
         </div>
         <p>관심 있는 카테고리를 골라주세요.<br />나중에 다른 혜택도 살펴볼 수 있어요.</p>
         <div className="wm-categories wm-categories-modal">
-          {['전체', ...CATEGORIES].map((label) => (
+          {[['전체', '🗂️'], ...CATEGORIES].map(([label, icon]) => (
             <button key={label} type="button" className={label === '전체' ? 'wm-cat-all' : undefined} onClick={() => pick(label)}>
+              <i aria-hidden="true">{icon}</i>
               <strong>{label}</strong>
               <span>{count(label)}개 혜택</span>
             </button>

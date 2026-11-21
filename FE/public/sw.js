@@ -1,4 +1,4 @@
-const CACHE = 'bokji-v1'
+const CACHE = 'bokji-v2'
 
 self.addEventListener('install', () => self.skipWaiting())
 

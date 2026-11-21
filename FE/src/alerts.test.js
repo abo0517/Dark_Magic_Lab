@@ -57,9 +57,10 @@ test('docGuide', () => {
 
 test('toProgram', async () => {
   const { toProgram } = await import('./api.js')
-  const p = toProgram({ name: 'X', min_age: 65, max_age: null, source: 'local', sgg: '마포구', deadline: null, docs: null })
-  assert.deepEqual([p.minAge, p.maxAge, p.gu, p.deadline, p.docs], [65, undefined, '마포구', '', []])
-  assert.equal(toProgram({ name: 'Y', source: 'central', sgg: '종로구' }).gu, undefined)
+  const p = toProgram({ name: 'X', minAge: 65, maxAge: null, gu: '마포구', deadline: null, docs: null, office: null, sourceUrl: 'u' })
+  assert.deepEqual([p.minAge, p.maxAge, p.gu, p.deadline, p.docs, p.office, p.sourceUrl], [65, undefined, '마포구', '', [], '', 'u'])
+  assert.equal(toProgram({ name: 'Y', gu: '서울특별시교육청' }).gu, undefined)
+  assert.equal(toProgram({ name: 'Z', gu: null }).gu, undefined)
 })
 
 test('scan helpers', async () => {
@@ -100,4 +101,10 @@ test('fromModel with real model output', async () => {
   assert.equal(r.programs[0].deadline, '2026-02-30')
   assert.deepEqual(r.programs[0].docs, ['신분증', '통장 (필요 시)'])
   assert.equal(r.facts.find((f) => f.label === '지원 금액').uncertain, true)
+})
+
+test('fromModel keeps hasPersonalInfo', async () => {
+  const { fromModel } = await import('./api.js')
+  assert.equal(fromModel({ easySummary: 'x', programs: [], hasPersonalInfo: true }).hasPersonalInfo, true)
+  assert.equal(fromModel({ easySummary: 'x', programs: [] }).hasPersonalInfo, false)
 })
