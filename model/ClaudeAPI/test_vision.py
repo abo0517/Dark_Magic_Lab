@@ -29,7 +29,7 @@ exclusions 지원 제외·중복 수급 불가 / contact 문의처 / notes 유�
 
 
 def load_env():
-    env = Path(__file__).resolve().parent.parent / ".env"
+    env = Path(__file__).resolve().parents[2] / ".env"
     if not env.is_file():
         return
     for line in env.read_text(encoding="utf-8-sig").splitlines():
