@@ -44,7 +44,7 @@ export function Program({ program, today }) {
     <Card title={program.name}>
       <div className="ws-checklist-deadline">
         신청 기한<br />
-        <strong>{deadlineText(program.deadline, today)}</strong>
+        <strong>{deadlineText(program.deadline, today, program.periodText)}</strong>
       </div>
       <fieldset className="ws-checklist-docs">
         <legend>필요한 서류</legend>
