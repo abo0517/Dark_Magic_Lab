@@ -3,6 +3,7 @@ import { JourneyContext } from './journey.js'
 import { analyze as analyzeMock, mockCatalog, mockResult } from './mock.js'
 import { analyzeRemote, hasAnalyze } from './api.js'
 import { supabase } from './supabaseClient.js'
+import { loadProfile, storeProfile } from './profile.js'
 import { koreanDate } from './alerts.js'
 import { shrinkImage, withTimeout } from './scan.js'
 import { Screen, ApplyButton } from './components/UI.jsx'
@@ -53,6 +54,9 @@ export default function App() {
   const [screen, setScreen] = useState('login')
   const [authReady, setAuthReady] = useState(!supabase)
   const [authError, setAuthError] = useState('')
+  const [userId, setUserId] = useState(null)
+  const [loadedUserId, setLoadedUserId] = useState(null)
+  const [profileError, setProfileError] = useState('')
   const [back, setBack] = useState('benefits')
   const [data, setData] = useState(null)
   const [profile, setProfile] = useState(null)
@@ -74,18 +78,46 @@ export default function App() {
     if (!supabase) return
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (event === 'INITIAL_SESSION') {
-        if (session) setScreen('draft')
+        if (session) setUserId(session.user.id)
         else clearAppState()
         setAuthReady(true)
       } else if (event === 'SIGNED_IN') {
         setAuthError('')
-        setScreen((current) => current === 'login' ? 'draft' : current)
+        setUserId(session.user.id)
+        setAuthReady(true)
       } else if (event === 'SIGNED_OUT') {
         clearAppState()
       }
     })
     return () => subscription.unsubscribe()
   }, [])
+
+  useEffect(() => {
+    if (!userId) return
+    let active = true
+    loadProfile(userId)
+      .then((saved) => {
+        if (!active) return
+        setProfileError('')
+        if (saved) {
+          saveProfile(saved)
+          setScreen('benefits')
+        } else {
+          setProfile(null)
+          setScreen('draft')
+        }
+      })
+      .catch(() => {
+        if (!active) return
+        setProfile(null)
+        setProfileError('저장된 정보를 불러오지 못했어요. 다시 시도하거나 관리자에게 알려 주세요.')
+        setScreen('draft')
+      })
+      .finally(() => {
+        if (active) setLoadedUserId(userId)
+      })
+    return () => { active = false }
+  }, [userId])
 
   useEffect(() => {
     document.documentElement.style.setProperty('--ws-font-size', FONT[font])
@@ -100,6 +132,13 @@ export default function App() {
   const saveProfile = (p) => {
     setProfile(p)
     if (p.age >= 60 && !hasStored('ws-font')) setFont('large')
+  }
+
+  const saveProfileRemote = async (p) => {
+    if (!userId) throw new Error('로그인이 필요합니다')
+    await storeProfile(userId, p)
+    saveProfile(p)
+    setProfileError('')
   }
 
   const changeFont = (f) => {
@@ -167,6 +206,9 @@ export default function App() {
     setBenefitCategory(null)
     setResumeName(null)
     setProfile(null)
+    setUserId(null)
+    setLoadedUserId(null)
+    setProfileError('')
     setData(null)
     setAuthError('')
     setFont(storedFont())
@@ -211,7 +253,7 @@ export default function App() {
   }
   const home = () => setScreen('benefits')
 
-  if (!authReady) return <p className="ws-ui-muted" role="status">로그인 상태를 확인하는 중이에요.</p>
+  if (!authReady || (userId && loadedUserId !== userId)) return <p className="ws-ui-muted" role="status">계정 정보를 확인하는 중이에요.</p>
 
   let view
   if (screen === 'login') view = <LoginScreen onLogin={login} error={authError} />
@@ -219,8 +261,9 @@ export default function App() {
     view = (
       <DraftScreen
         onBack={logout}
-        onDone={(p) => {
-          saveProfile(p)
+        error={profileError}
+        onDone={async (p) => {
+          await saveProfileRemote(p)
           setBenefitCategory(null)
           setScreen('benefits')
         }}
@@ -288,8 +331,8 @@ export default function App() {
         onResume={resumeProgram}
         onFavorite={toggleFavorite}
         onRemoveApplied={(name) => toggleApplied({ name })}
-        onSaveProfile={(p) => {
-          saveProfile(p)
+        onSaveProfile={async (p) => {
+          await saveProfileRemote(p)
           setScreen(back)
         }}
         onLogout={logout}
