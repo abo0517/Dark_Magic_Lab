@@ -184,8 +184,6 @@ select.ws-ui-input { cursor: pointer; }
 .ws-login-caption { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--ws-color-muted); font-size: 0.9em; }
 .ws-login-actions { display: grid; gap: 8px; }
 .ws-login-kakao { background: var(--ws-color-kakao); border-color: var(--ws-color-kakao); color: var(--ws-color-kakao-text); }
-.ws-login-naver { background: var(--ws-color-naver); border-color: var(--ws-color-naver); color: var(--ws-color-naver-text); }
-.ws-login-n { font-weight: 900; }
 .ws-login-google { color: var(--ws-color-text); border-color: var(--ws-color-border); }
 .ws-login-g { color: var(--ws-color-primary); font-weight: 800; }
 
