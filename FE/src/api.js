@@ -35,13 +35,14 @@ export const toProgram = (r) => ({
 
 const POLICY_SELECT = 'name,summary,category,minAge:min_age,maxAge:max_age,deadline,docs,office,eligibility,sourceUrl:detail_link,gu:sgg'
 
-// 백엔드 요청 형식: apikey만 보내고(Authorization 없음), eligibility가 비어 있는 정책은 제외한다.
+// 백엔드 요청 형식: apikey만 보내고(Authorization 없음), eligibility가 비어 있거나 나이 조건이 없는 정책은 제외한다.
 export async function fetchPolicies({ age }) {
   const params = new URLSearchParams({
     select: POLICY_SELECT,
     limit: '1000',
     and: `(or(min_age.is.null,min_age.lte.${age}),or(max_age.is.null,max_age.gte.${age}))`,
     eligibility: 'not.is.null',
+    or: '(min_age.not.is.null,max_age.not.is.null)', // 나이 조건이 확인된 정책만 가져온다
   })
   const res = await fetch(`${SUPABASE_URL}/rest/v1/policies?${params}`, { headers: { apikey: KEY } })
   if (!res.ok) throw new Error(`policies ${res.status}`)
