@@ -164,7 +164,7 @@ export default function App() {
   }
 
   const updateJourney = (program, patch) => {
-    const next = { ...journeys, [program.name]: { program, checked: [], guide: null, ...journeys[program.name], ...patch } }
+    const next = { ...journeys, [program.name]: { checked: [], guide: null, ...journeys[program.name], program, ...patch } }
     setJourneys(next)
     write('wm-journeys', next)
   }
@@ -232,7 +232,7 @@ export default function App() {
       setScreen('draft')
       return
     }
-    if (provider !== 'google' && provider !== 'kakao' && provider !== 'naver') {
+    if (provider !== 'google' && provider !== 'kakao') {
       setAuthError('지원하지 않는 로그인 방법이에요.')
       return
     }
@@ -243,11 +243,8 @@ export default function App() {
     setAuthError('')
     try {
       const { error } = await supabase.auth.signInWithOAuth({
-        provider: provider === 'naver' ? 'custom:naver' : provider,
-        options: {
-          redirectTo: `${window.location.origin}/`,
-          scopes: provider === 'naver' ? 'openid' : undefined,
-        },
+        provider,
+        options: { redirectTo: `${window.location.origin}/` },
       })
       if (error) setAuthError(error.message)
     } catch {

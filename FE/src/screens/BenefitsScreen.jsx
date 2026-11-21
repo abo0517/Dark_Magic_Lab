@@ -109,7 +109,7 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
   const isOpen = (p) => p.closed !== true && (daysLeft(p.deadline, today) === null || daysLeft(p.deadline, today) >= 0)
   const mine = (p) => judge(p, profile).ok && isOpen(p)
   const real = (cat.rows ?? []).filter(mine)
-  const sample = !loading && real.length === 0
+  const sample = !hasBackend && !loading && real.length === 0 // 서버 연결이 있으면 DB에 없는 샘플 정책은 보여주지 않는다
   const list = sample ? mockResult.programs.filter(mine).map((p) => ({ ...p, isSample: true })) : real
   const matched = [...new Map(list.map((p) => [p.name, p])).values()]
     .filter((p) => category === '전체' || categoryOf(p) === category)
