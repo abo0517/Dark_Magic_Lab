@@ -1,0 +1,42 @@
+:root {
+  --ws-color-bg: #f8f7f3;
+  --ws-color-text: #202c40;
+  --ws-color-primary: #2448a5;
+  --ws-color-primary-text: #ffffff;
+  --ws-color-primary-soft: #3558b5;
+  --ws-color-primary-dark: #203d83;
+  --ws-color-card: #ffffff;
+  --ws-color-border: #788496;
+  --ws-color-line: #dfe3ea;
+  --ws-color-muted: #526075;
+  --ws-color-info: #eaf0fb;
+  --ws-color-apricot: #f0c6a8;
+  --ws-color-warm: #fff0e2;
+  --ws-color-warm-text: #794019;
+  --ws-color-danger: #a33128;
+  --ws-color-success: #286442;
+  --ws-color-page: #edece7;
+  --ws-color-shell-line: #e4e3df;
+  --ws-color-chip-line: #d6deeb;
+  --ws-color-track: #e7eaf1;
+  --ws-color-road: #9bafd5;
+  --ws-color-star: #f6c34a;
+  --ws-color-star-bg: #fff2cb;
+  --ws-color-welcome: #f2f5fc;
+  --ws-color-halo: #e2eaf9;
+  --ws-color-halo-warm: #f9f4ea;
+  --ws-color-kakao: #fee500;
+  --ws-color-kakao-text: #191919;
+  --ws-color-scrim: #17243bcc;
+  --ws-space: 0.5rem;
+  --ws-radius: 1rem;
+  --ws-font-size: 1.25rem;
+  --ws-btn-height: 3.75rem;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
