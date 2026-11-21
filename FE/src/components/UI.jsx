@@ -23,7 +23,6 @@ export function Screen({ title, onBack, onHome, header, children, footer, varian
               <span className="ws-ui-wordmark-light">복지</span>
               <span className="ws-ui-wordmark-strong">메이트</span>
             </span>
-            <span className="ws-ui-demo">시연용</span>
           </button>
           <span className="ws-ui-brand-caption">복잡한 복지를, 쉬운 일상으로</span>
         </header>
