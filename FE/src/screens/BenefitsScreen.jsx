@@ -5,6 +5,7 @@ import { mockCatalog, mockResult } from '../mock.js'
 import { ageText, buildAlerts, daysLeft, judge, koreanDate } from '../alerts.js'
 import { fetchPolicies, hasBackend } from '../api.js'
 
+const MAX_SHOWN = 30
 const CATEGORIES = ['연금', '지원금', '대출', '돌봄/서비스']
 
 export function categoryOf(p) {
@@ -98,7 +99,10 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
   const real = (cat.rows ?? []).filter(mine)
   const sample = !loading && real.length === 0
   const list = sample ? mockResult.programs.filter(mine).map((p) => ({ ...p, isSample: true })) : real
-  const shown = list.filter((p) => category === '전체' || categoryOf(p) === category)
+  const matched = [...new Map(list.map((p) => [p.name, p])).values()]
+    .filter((p) => category === '전체' || categoryOf(p) === category)
+    .sort((a, b) => Number(b.gu === profile.gu) - Number(a.gu === profile.gu))
+  const shown = matched.slice(0, MAX_SHOWN)
   const current = Math.min(idx, Math.max(0, shown.length - 1))
 
   useEffect(() => {
@@ -198,6 +202,9 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
         <Card title={category ? `${category} 혜택이 아직 없어요` : '관심 있는 혜택을 선택해 주세요'}>
           <p>다른 카테고리를 선택하거나 안내문을 촬영해 주세요.</p>
         </Card>
+      )}
+      {matched.length > shown.length && (
+        <p className="ws-ui-muted">혜택이 많아서 앞의 {MAX_SHOWN}개만 보여드려요. 다른 카테고리도 살펴보세요.</p>
       )}
       <p className="ws-ui-muted wm-privacy">소득·거주 조건에 따라 실제 대상은 다를 수 있어요.</p>
 

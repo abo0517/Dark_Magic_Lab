@@ -2,11 +2,11 @@ import { GU } from './seoul.js'
 import { deadlineText, koreanDate } from './alerts.js'
 import { supabase } from './supabaseClient.js'
 
-const URL = import.meta.env?.VITE_SUPABASE_URL
+const SUPABASE_URL = import.meta.env?.VITE_SUPABASE_URL
 const KEY = import.meta.env?.VITE_SUPABASE_PUBLISHABLE_KEY || import.meta.env?.VITE_SUPABASE_ANON_KEY
 const ANALYZE_URL = import.meta.env?.VITE_ANALYZE_URL
 
-export const hasBackend = Boolean(URL && KEY)
+export const hasBackend = Boolean(SUPABASE_URL && KEY)
 export const hasAnalyze = Boolean(ANALYZE_URL)
 
 const authHeaders = async () => {
@@ -22,21 +22,28 @@ export const toProgram = (r) => ({
   name: r.name,
   summary: r.summary ?? '',
   eligibility: r.eligibility ?? '',
-  minAge: r.min_age ?? undefined,
-  maxAge: r.max_age ?? undefined,
-  gu: r.source === 'local' ? r.sgg || undefined : undefined,
+  category: r.category ?? '',
+  minAge: r.minAge ?? undefined,
+  maxAge: r.maxAge ?? undefined,
+  gu: GU.includes(r.gu) ? r.gu : undefined,
   deadline: r.deadline ?? '',
   office: r.office ?? '',
   docs: r.docs ?? [],
   source: '공공데이터포털 · 복지서비스',
-  sourceUrl: r.detail_link ?? '',
+  sourceUrl: r.sourceUrl ?? '',
 })
 
+const POLICY_SELECT = 'name,summary,category,minAge:min_age,maxAge:max_age,deadline,docs,office,eligibility,sourceUrl:detail_link,gu:sgg'
+
+// 백엔드 요청 형식: apikey만 보내고(Authorization 없음), eligibility가 비어 있는 정책은 제외한다.
 export async function fetchPolicies({ age }) {
-  const filter = `(or(min_age.is.null,min_age.lte.${age}),or(max_age.is.null,max_age.gte.${age}),or(source.eq.central,ctpv.eq.서울특별시))`
-  const res = await fetch(`${URL}/rest/v1/policies?select=*&limit=500&and=${encodeURIComponent(filter)}`, {
-    headers: await authHeaders(),
+  const params = new URLSearchParams({
+    select: POLICY_SELECT,
+    limit: '1000',
+    and: `(or(min_age.is.null,min_age.lte.${age}),or(max_age.is.null,max_age.gte.${age}))`,
+    eligibility: 'not.is.null',
   })
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/policies?${params}`, { headers: { apikey: KEY } })
   if (!res.ok) throw new Error(`policies ${res.status}`)
   return (await res.json()).map(toProgram)
 }
@@ -87,6 +94,7 @@ export function fromModel(raw) {
   return {
     kind: first ? `${first.name} 안내문` : '',
     easySummary: raw.easySummary ?? '',
+    hasPersonalInfo: raw.hasPersonalInfo === true,
     source: '업로드한 안내문 (AI가 읽은 내용)',
     todos,
     facts,
@@ -97,7 +105,7 @@ export function fromModel(raw) {
 export async function analyzeRemote({ file, signal }) {
   const body = new FormData()
   body.append('file', file)
-  const sameProject = URL && new URL(ANALYZE_URL, window.location.origin).origin === new URL(URL).origin
+  const sameProject = SUPABASE_URL && new URL(ANALYZE_URL, window.location.origin).origin === new URL(SUPABASE_URL).origin
   const res = await fetch(ANALYZE_URL, { method: 'POST', body, signal, headers: sameProject ? await authHeaders() : {} })
   if (!res.ok) {
     const code = await res.json().then((j) => j.code, () => undefined)

@@ -52,10 +52,13 @@ export const STATUS = {
   blurry: '사진이 흐려요. 카메라를 잠시 멈추고 글자가 또렷해졌을 때 다시 찍어 주세요.',
   cropped: '안내문 일부가 잘렸어요. 문서의 네 모서리가 모두 보이게 다시 찍어 주세요.',
   timeout: '응답이 늦어지고 있어요. 잠시 후 다시 시도해 주세요.',
+  tooLarge: '파일이 너무 커요. 더 작은 사진이나 PDF로 올려 주세요.',
+  unsupported: '이 파일은 읽을 수 없어요. 사진(JPG, PNG)이나 PDF로 올려 주세요.',
+  upstream: '분석 서버가 응답하지 못했어요. 잠시 후 다시 시도해 주세요.',
   camera: '카메라를 열 수 없어요. 저장된 사진을 올려주세요.',
 }
 
-const CODES = { UNREADABLE: 'unreadable', BLURRY: 'blurry', CROPPED: 'cropped', TIMEOUT: 'timeout' }
+const CODES = { UNREADABLE: 'unreadable', BLURRY: 'blurry', CROPPED: 'cropped', TIMEOUT: 'timeout', TOO_LARGE: 'tooLarge', UNSUPPORTED: 'unsupported', UPSTREAM_ERROR: 'upstream' }
 export const statusFor = (err) => CODES[err?.code] ?? 'error'
 
 export function StatusBox({ state, action, onAction }) {

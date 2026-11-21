@@ -50,6 +50,14 @@ const storedFont = () => {
   return f in FONT ? f : 'normal'
 }
 
+// 소셜 로그인이 실패하면 Supabase가 주소에 오류 내용을 붙여 돌려보낸다. 한 번만 읽고 주소에서 지운다.
+const oauthError = (() => {
+  const p = new URLSearchParams(`${window.location.search}&${window.location.hash.replace(/^#/, '')}`)
+  const msg = p.get('error_description') || p.get('error')
+  if (msg) window.history.replaceState(null, '', window.location.pathname)
+  return msg ? `로그인하지 못했어요. (${msg})` : ''
+})()
+
 export default function App() {
   const [screen, setScreen] = useState('login')
   const [authReady, setAuthReady] = useState(!supabase)
@@ -79,7 +87,10 @@ export default function App() {
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       if (event === 'INITIAL_SESSION') {
         if (session) setUserId(session.user.id)
-        else clearAppState()
+        else {
+          clearAppState()
+          setAuthError(oauthError)
+        }
         setAuthReady(true)
       } else if (event === 'SIGNED_IN') {
         setAuthError('')
@@ -135,6 +146,7 @@ export default function App() {
   }
 
   const saveProfileRemote = async (p) => {
+    if (!userId && import.meta.env.DEV) return saveProfile(p)
     if (!userId) throw new Error('로그인이 필요합니다')
     await storeProfile(userId, p)
     saveProfile(p)
@@ -216,6 +228,10 @@ export default function App() {
   }
 
   const login = async (provider) => {
+    if (import.meta.env.DEV && (!supabase || window.location.search.includes('demo'))) {
+      setScreen('draft')
+      return
+    }
     if (provider !== 'google' && provider !== 'kakao') {
       setAuthError('이 로그인 방법은 준비 중이에요. 구글 또는 카카오로 시작해 주세요.')
       return

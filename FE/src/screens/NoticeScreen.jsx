@@ -27,6 +27,13 @@ export default function NoticeScreen({ data, profile, applied, onToggleApplied, 
         {data.easySummary}<br />만 {profile.age}세 기준으로 확인했어요.
       </p>
 
+      {data.hasPersonalInfo && (
+        <p className="ws-ui-note" role="status">
+          <strong>개인정보가 보이는 안내문이에요.</strong><br />
+          사진은 분석을 위해 외부 AI로 전송됐고 우리 서버에는 저장하지 않아요. 다음에는 이름·주민등록번호·전화번호·주소를 가리고 찍어 주세요.
+        </p>
+      )}
+
       {data.todos?.length > 0 && (
         <Card title="언제까지 무엇을 해야 하나요?">
           <ol className="wm-todos">
