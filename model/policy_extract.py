@@ -1,6 +1,7 @@
 # 복지 정책 상세 텍스트에서 안내문 분석과 같은 19개 키로 조건을 뽑는다. 정책 API 호출은 백엔드가 한다.
 # 사용: python model/policy_extract.py 샘플.json
 # 샘플.json: [{"source": "central"|"local", "servId": "...", "name": "...", "fields": {"tgtrDtlCn": "...", ...}}, ...]
+import html
 import json
 import os
 import sys
@@ -43,8 +44,8 @@ exclusions 지원 제외·중복 수급 불가 / contact 문의처 / notes 유�
 PROMPT = """아래는 복지 정책의 상세 설명 텍스트입니다. 이 제도 1건에서 조건을 JSON으로 뽑으세요.
 """ + RULES + "\n\n[정책 텍스트]\n"
 
-CENTRAL_FIELDS = ["wlfareInfoOutlCn", "tgtrDtlCn", "slctCritCn", "alwServCn", "applmetList", "basfrmList", "inqplCtadrList"]
-LOCAL_FIELDS = ["sprtTrgtCn", "slctCritCn", "alwServCn", "aplyMtdCn", "basfrmList", "inqplCtadrList",
+CENTRAL_FIELDS = ["wlfareInfoOutlCn", "tgtrDtlCn", "slctCritCn", "alwServCn", "applmetList", "basfrmList", "inqplCtadrList", "inqplHmpgReldList"]
+LOCAL_FIELDS = ["servDgst", "aplyMtdNm", "sprtTrgtCn", "slctCritCn", "alwServCn", "aplyMtdCn", "basfrmList", "inqplCtadrList",
                 "bizChrDeptNm", "enfcBgngYmd", "enfcEndYmd"]
 
 
@@ -61,7 +62,7 @@ def load_env():
 def policy_text(item):
     fields = CENTRAL_FIELDS if item["source"] == "central" else LOCAL_FIELDS
     lines = [f"제목: {item.get('name', '')}"]
-    lines += [f"{f}: {item['fields'][f]}" for f in fields if item["fields"].get(f)]
+    lines += [f"{f}: {html.unescape(item['fields'][f])}" for f in fields if item["fields"].get(f)]
     return "\n".join(lines)
 
 
