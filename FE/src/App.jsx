@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { JourneyContext } from './journey.js'
 import { analyze, mockCatalog, mockResult } from './mock.js'
 import { koreanDate } from './alerts.js'
+import { shrinkImage, withTimeout } from './scan.js'
 import { Screen, ApplyButton } from './components/UI.jsx'
 import Nearby from './components/Nearby.jsx'
 import LoginScreen from './screens/LoginScreen.jsx'
@@ -129,7 +130,9 @@ export default function App() {
   }
 
   const scan = async (selection) => {
-    const result = await analyze(selection)
+    const file = await shrinkImage(selection.file)
+    const result = await withTimeout(analyze({ ...selection, file }))
+    if (selection.signal?.aborted) return
     setData(result)
     setScreen('notice')
   }

@@ -44,16 +44,22 @@ export function Screen({ title, onBack, onHome, header, children, footer, varian
   )
 }
 
-const STATUS = {
+export const STATUS = {
   loading: '안내문을 읽고 있어요.',
   error: '안내문을 읽는 중 문제가 생겼어요.',
   empty: '이 안내문에서 신청할 제도를 찾지 못했어요.',
   unreadable: '사진 속 글자를 읽기 어려워요. 밝은 곳에서 다시 촬영해 주세요.',
+  blurry: '사진이 흐려요. 카메라를 잠시 멈추고 글자가 또렷해졌을 때 다시 찍어 주세요.',
+  cropped: '안내문 일부가 잘렸어요. 문서의 네 모서리가 모두 보이게 다시 찍어 주세요.',
+  timeout: '응답이 늦어지고 있어요. 잠시 후 다시 시도해 주세요.',
   camera: '카메라를 열 수 없어요. 저장된 사진을 올려주세요.',
 }
 
+const CODES = { UNREADABLE: 'unreadable', BLURRY: 'blurry', CROPPED: 'cropped', TIMEOUT: 'timeout' }
+export const statusFor = (err) => CODES[err?.code] ?? 'error'
+
 export function StatusBox({ state, action, onAction }) {
-  const alert = ['error', 'camera', 'unreadable'].includes(state)
+  const alert = state !== 'loading' && state !== 'empty'
   return (
     <div className="ws-ui-status" role={alert ? 'alert' : 'status'}>
       <p className={alert ? 'ws-ui-error' : undefined}>{STATUS[state]}</p>

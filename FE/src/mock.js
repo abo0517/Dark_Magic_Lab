@@ -1,6 +1,16 @@
 export const mockResult = {
   easySummary: '65세 이상 어르신께 매달 일정 금액을 드리는 제도 안내문입니다. (샘플)',
   source: '공공데이터포털 · 복지서비스 목록 (샘플)',
+  kind: '기초연금 안내문 (샘플)',
+  todos: [
+    { text: '신분증과 통장 사본을 챙겨요', deadline: '' },
+    { text: '소득·재산 신고서를 작성해 주민센터에 내요', deadline: '2026-12-31' },
+  ],
+  facts: [
+    { label: '신청 기한', value: '2026년 12월 31일까지', evidence: '신청 기간: 2026. 1. 1. ~ 2026. 12. 31. (샘플)', uncertain: false },
+    { label: '지원 금액', value: '', evidence: '', uncertain: true },
+    { label: '제출처', value: '가까운 주민센터', evidence: '신청 장소: 주소지 읍·면·동 행정복지센터 (샘플)', uncertain: false },
+  ],
   programs: [
     { name: '기초연금(샘플)', summary: '어르신께 매달 일정 금액을 드려요.', minAge: 65, deadline: '2026-12-31', office: '가까운 주민센터', docs: ['신분증', '통장 사본', '소득·재산 신고서'] },
     { name: '청년 월세 지원(샘플)', summary: '청년의 월세 부담을 덜어줘요.', minAge: 19, maxAge: 34, deadline: '2026-11-23', office: '가까운 주민센터 또는 복지로 온라인', docs: ['신분증', '임대차계약서', '통장 사본', '소득·재산 확인 서류'] },
@@ -35,8 +45,16 @@ export const mockCatalog = [
   },
 ]
 
-// 목업. 서버 호출로 바꿀 때 이 함수만 교체한다. 읽기 실패는 err.code='UNREADABLE'로 reject.
-export const analyze = async () => {
-  await new Promise((r) => setTimeout(r, 600))
+// 목업. 서버 호출로 바꿀 때 이 함수만 교체한다. 실패는 err.code(UNREADABLE|BLURRY|CROPPED|TIMEOUT)로 reject.
+// 파일 이름으로 상황을 흉내 낸다: blur, crop, fail, slow(15초), hang(무응답)
+export const analyze = async ({ file } = {}) => {
+  const name = file?.name ?? ''
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms))
+  const reject = (code) => Promise.reject(Object.assign(new Error(code), { code }))
+  if (name.includes('hang')) return new Promise(() => {})
+  await wait(name.includes('slow') ? 15000 : 600)
+  if (name.includes('blur')) return reject('BLURRY')
+  if (name.includes('crop')) return reject('CROPPED')
+  if (name.includes('fail')) return reject('ERROR')
   return mockResult
 }

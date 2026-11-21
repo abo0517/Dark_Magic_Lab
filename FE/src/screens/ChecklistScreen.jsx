@@ -70,7 +70,6 @@ export function Program({ program, today }) {
       <div className="ws-checklist-office">
         <strong>제출처</strong>
         <p>{program.office || '원문에서 제출처를 확인하세요.'}</p>
-      </div>
-    </Card>
+      </div>    </Card>
   )
 }

@@ -26,6 +26,9 @@ export default function LoginScreen({ onLogin }) {
         <div className="ws-login-actions">
           <p className="ws-login-lead">지금, 나를 위한 혜택을 찾아보세요</p>
           <Button className="ws-login-kakao" onClick={() => onLogin('kakao')}>💬 카카오로 시작하기</Button>
+          <Button className="ws-login-naver" onClick={() => onLogin('naver')}>
+            <span className="ws-login-n" aria-hidden="true">N</span> 네이버로 시작하기
+          </Button>
           <Button kind="secondary" className="ws-login-google" onClick={() => onLogin('google')}>
             <span className="ws-login-g" aria-hidden="true">G</span> 구글로 시작하기
           </Button>
