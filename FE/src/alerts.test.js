@@ -54,3 +54,19 @@ test('docGuide', () => {
   assert.equal(docGuide('월세 이체 확인증').offline, '거래 은행 앱 또는 지점')
   assert.equal(docGuide('').note, '필요한 서류인지 제출처에 먼저 확인하세요.')
 })
+
+test('toProgram', async () => {
+  const { toProgram } = await import('./api.js')
+  const p = toProgram({ name: 'X', min_age: 65, max_age: null, source: 'local', sgg: '마포구', deadline: null, docs: null })
+  assert.deepEqual([p.minAge, p.maxAge, p.gu, p.deadline, p.docs], [65, undefined, '마포구', '', []])
+  assert.equal(toProgram({ name: 'Y', source: 'central', sgg: '종로구' }).gu, undefined)
+})
+
+test('scan helpers', async () => {
+  const { fitSize, withTimeout } = await import('./scan.js')
+  assert.deepEqual(fitSize(4000, 3000), [1568, 1176])
+  assert.deepEqual(fitSize(3000, 4000), [1176, 1568])
+  assert.deepEqual(fitSize(800, 600), [800, 600])
+  await assert.rejects(withTimeout(new Promise(() => {}), 20), { code: 'TIMEOUT' })
+  assert.equal(await withTimeout(Promise.resolve(1), 20), 1)
+})

@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Button } from './UI.jsx'
-
-const UNREADABLE = '사진 속 글자를 읽기 어려워요. 밝은 곳에서 다시 촬영해 주세요.'
+import { Button, STATUS, statusFor } from './UI.jsx'
 
 export default function CameraCapture({ onCapture, onClose }) {
   const videoRef = useRef(null)
@@ -44,7 +42,8 @@ export default function CameraCapture({ onCapture, onClose }) {
     try {
       await onCapture(new File([blob], 'welfare-notice.jpg', { type: 'image/jpeg' }))
     } catch (e) {
-      setMsg(e?.code === 'UNREADABLE' ? UNREADABLE : '사진을 읽는 중 문제가 생겼어요.')
+      const s = statusFor(e)
+      setMsg(s === 'error' ? '사진을 읽는 중 문제가 생겼어요.' : STATUS[s])
       setBusy(false)
     }
   }
@@ -57,8 +56,17 @@ export default function CameraCapture({ onCapture, onClose }) {
           <h2 id="ws-camera-title" className="ws-ui-heading">안내문 촬영</h2>
           <Button kind="quiet" onClick={onClose}>닫기</Button>
         </div>
-        <p>안내문이 화면 안에 들어오도록 맞춰주세요.</p>
-        <video ref={videoRef} className="ws-camera-video" autoPlay playsInline muted />
+        <p>안내문이 화면 안에 들어오도록 맞춰주세요. 글자가 선명하게 보이도록 밝은 곳에서 찍어 주세요.</p>
+        <p className="ws-ui-muted">이름·주소·주민등록번호는 가리고 찍어 주세요. 사진은 외부 AI 서비스로 전송되며 우리 서버에는 저장하지 않아요.</p>
+        <div className="ws-camera-view">
+          <video ref={videoRef} className="ws-camera-video" autoPlay playsInline muted />
+          <div className="ws-camera-frame" aria-hidden="true" />
+        </div>
+        <ul className="ws-camera-tips">
+          <li>밝은 곳에서, 그림자가 지지 않게 찍어 주세요.</li>
+          <li>종이를 평평하게 펴고 네 모서리가 모두 보이게 해 주세요.</li>
+          <li>손을 멈추고 글자가 또렷할 때 눌러 주세요.</li>
+        </ul>
         {error && <p className="ws-ui-error" role="alert">{error}</p>}
         <Button onClick={shoot} disabled={!!fatal || busy}>{busy ? '안내문을 읽고 있어요.' : '사진 촬영하기'}</Button>
       </div>

@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { Screen, Button, Card, StatusBox, AlertBanner } from '../components/UI.jsx'
+import { Screen, Button, Card, StatusBox, AlertBanner, statusFor } from '../components/UI.jsx'
 import CameraCapture from '../components/CameraCapture.jsx'
 import { mockCatalog, mockResult } from '../mock.js'
-import { ageMatches, ageText, buildAlerts, daysLeft, koreanDate } from '../alerts.js'
+import { ageText, buildAlerts, daysLeft, judge, koreanDate } from '../alerts.js'
+import { fetchPolicies, hasBackend } from '../api.js'
 
 const CATEGORIES = ['연금', '지원금', '대출', '돌봄/서비스']
 
@@ -74,14 +75,28 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
   const [idx, setIdx] = useState(0)
   const [status, setStatus] = useState('')
   const [camera, setCamera] = useState(false)
+  const [slow, setSlow] = useState(false)
+  const abortRef = useRef(null)
   const dialogRef = useRef(null)
   const triggerRef = useRef(null)
   const fileRef = useRef(null)
 
+  const [cat, setCat] = useState({ rows: hasBackend ? null : mockCatalog, error: false })
+
+  useEffect(() => {
+    if (!hasBackend) return
+    let off = false
+    fetchPolicies(profile)
+      .then((rows) => !off && setCat({ rows, error: false }))
+      .catch(() => !off && setCat({ rows: [], error: true }))
+    return () => { off = true }
+  }, [])
+
+  const loading = cat.rows === null
   const isOpen = (p) => p.closed !== true && (daysLeft(p.deadline, today) === null || daysLeft(p.deadline, today) >= 0)
-  const mine = (p) => ageMatches(p, profile.age) && isOpen(p)
-  const real = mockCatalog.filter(mine)
-  const sample = real.length === 0
+  const mine = (p) => judge(p, profile).ok && isOpen(p)
+  const real = (cat.rows ?? []).filter(mine)
+  const sample = !loading && real.length === 0
   const list = sample ? mockResult.programs.filter(mine).map((p) => ({ ...p, isSample: true })) : real
   const shown = list.filter((p) => category === '전체' || categoryOf(p) === category)
   const current = Math.min(idx, Math.max(0, shown.length - 1))
@@ -105,13 +120,27 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
   }
 
   async function scan(selection) {
+    const ctrl = new AbortController()
+    abortRef.current = ctrl
     setStatus('loading')
     try {
-      await onScan(selection)
+      await onScan({ ...selection, signal: ctrl.signal })
     } catch (e) {
-      setStatus(e?.code === 'UNREADABLE' ? 'unreadable' : 'error')
+      if (!ctrl.signal.aborted) setStatus(statusFor(e))
     }
   }
+
+  function cancelScan() {
+    abortRef.current?.abort()
+    setStatus('')
+  }
+
+  useEffect(() => {
+    setSlow(false)
+    if (status !== 'loading') return
+    const t = setTimeout(() => setSlow(true), 10000)
+    return () => clearTimeout(t)
+  }, [status])
 
   const count = (label) => list.filter((p) => label === '전체' || categoryOf(p) === label).length
 
@@ -135,12 +164,18 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
               if (file) scan({ kind: 'file', file })
             }}
           />
-          {status ? (
-            <StatusBox state={status} action={status === 'loading' ? undefined : '다시 촬영하기'} onAction={() => { setStatus(''); setCamera(true) }} />
+          {status === 'loading' ? (
+            <>
+              <StatusBox state="loading" action="취소" onAction={cancelScan} />
+              {slow && <p className="ws-ui-muted">조금만 기다려 주세요. 사진이 크거나 서버가 바쁠 때는 오래 걸릴 수 있어요.</p>}
+            </>
+          ) : status ? (
+            <StatusBox state={status} action="다시 촬영하기" onAction={() => { setStatus(''); setCamera(true) }} />
           ) : (
             <Button onClick={() => setCamera(true)}>📷 안내문 촬영하기</Button>
           )}
-          <Button kind="quiet" onClick={() => fileRef.current.click()}>사진·PDF 파일로 올리기</Button>
+          <Button kind="quiet" disabled={status === 'loading'} onClick={() => fileRef.current.click()}>사진·PDF 파일로 올리기</Button>
+          <p className="ws-ui-muted wm-privacy">사진은 분석을 위해 외부 AI 서비스로 전송돼요. 우리 서버에는 저장하지 않아요.</p>
         </>
       }
     >
@@ -156,7 +191,10 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
         <strong>{category ?? '카테고리를 선택해 주세요'}</strong>
         <button ref={triggerRef} type="button" className="ws-ui-button ws-ui-secondary" onClick={() => dialogRef.current.showModal()}>다른 카테고리 살펴보기</button>
       </div>
-      {shown.length ? (
+      {cat.error && <p className="ws-ui-error" role="alert">혜택 목록을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.</p>}
+      {loading ? (
+        <p role="status">혜택을 불러오고 있어요.</p>
+      ) : shown.length ? (
         <Slider items={shown} idx={current} setIdx={setIdx} favorites={favorites} onFavorite={onFavorite} onOpen={onOpen} />
       ) : (
         <Card title={category ? `${category} 혜택이 아직 없어요` : '관심 있는 혜택을 선택해 주세요'}>
