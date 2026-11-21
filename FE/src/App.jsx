@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { JourneyContext } from './journey.js'
 import { analyze as analyzeMock, mockCatalog, mockResult } from './mock.js'
 import { analyzeRemote, hasAnalyze } from './api.js'
+import { supabase } from './supabaseClient.js'
 import { koreanDate } from './alerts.js'
 import { shrinkImage, withTimeout } from './scan.js'
 import { Screen, ApplyButton } from './components/UI.jsx'
@@ -50,6 +51,8 @@ const storedFont = () => {
 
 export default function App() {
   const [screen, setScreen] = useState('login')
+  const [authReady, setAuthReady] = useState(!supabase)
+  const [authError, setAuthError] = useState('')
   const [back, setBack] = useState('benefits')
   const [data, setData] = useState(null)
   const [profile, setProfile] = useState(null)
@@ -65,6 +68,23 @@ export default function App() {
 
   useEffect(() => {
     document.title = '복지메이트'
+  }, [])
+
+  useEffect(() => {
+    if (!supabase) return
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'INITIAL_SESSION') {
+        if (session) setScreen('draft')
+        else clearAppState()
+        setAuthReady(true)
+      } else if (event === 'SIGNED_IN') {
+        setAuthError('')
+        setScreen((current) => current === 'login' ? 'draft' : current)
+      } else if (event === 'SIGNED_OUT') {
+        clearAppState()
+      }
+    })
+    return () => subscription.unsubscribe()
   }, [])
 
   useEffect(() => {
@@ -138,7 +158,7 @@ export default function App() {
     setScreen('notice')
   }
 
-  const logout = () => {
+  function clearAppState() {
     setFavorites([])
     setJourneys({})
     setApplied([])
@@ -148,8 +168,41 @@ export default function App() {
     setResumeName(null)
     setProfile(null)
     setData(null)
+    setAuthError('')
     setFont(storedFont())
     setScreen('login')
+  }
+
+  const login = async (provider) => {
+    if (provider !== 'google') {
+      setAuthError('이 로그인 방법은 준비 중이에요. 구글로 시작해 주세요.')
+      return
+    }
+    if (!supabase) {
+      setAuthError('Supabase 연결 설정이 없어요. 사이트 관리자에게 알려 주세요.')
+      return
+    }
+    setAuthError('')
+    try {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: { redirectTo: `${window.location.origin}/` },
+      })
+      if (error) setAuthError(error.message)
+    } catch {
+      setAuthError('구글 로그인을 시작하지 못했어요. 잠시 후 다시 시도해 주세요.')
+    }
+  }
+
+  const logout = async () => {
+    if (supabase) {
+      const { error } = await supabase.auth.signOut({ scope: 'local' })
+      if (error) {
+        window.alert('로그아웃하지 못했어요. 다시 시도해 주세요.')
+        return
+      }
+    }
+    clearAppState()
   }
 
   const goSettings = () => {
@@ -158,12 +211,14 @@ export default function App() {
   }
   const home = () => setScreen('benefits')
 
+  if (!authReady) return <p className="ws-ui-muted" role="status">로그인 상태를 확인하는 중이에요.</p>
+
   let view
-  if (screen === 'login') view = <LoginScreen onLogin={() => setScreen('draft')} />
+  if (screen === 'login') view = <LoginScreen onLogin={login} error={authError} />
   else if (screen === 'draft')
     view = (
       <DraftScreen
-        onBack={() => setScreen('login')}
+        onBack={logout}
         onDone={(p) => {
           saveProfile(p)
           setBenefitCategory(null)
