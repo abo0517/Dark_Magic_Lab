@@ -109,6 +109,8 @@ async def main():
     for k, (a, b) in tot.items():
         print(f"{k}: {a}/{b}")
     print(f"11장 중 4개 모두 일치한 파일: {full}장 (기준 8장 이상)")
+    flags = {nm[:16]: r.get("hasPersonalInfo") for nm, r in results.items() if "error" not in r}
+    print("\n개인정보 포함 표시(hasPersonalInfo):", {k: v for k, v in flags.items() if v} or "모두 false")
     print(f"\n제도 이름이 다른 경우: {len(names_bad)}")
     for x in names_bad:
         print("  ", x)
