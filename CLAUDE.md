@@ -7,8 +7,8 @@
 - Node: v24.21.0 (팀 전원 같은 버전 사용)
 - 프론트: React 18 + Vite 5
 - 프론트 배포: Vercel (루트 폴더 `FE`)
-- 백엔드: Supabase (Postgres, Edge Functions)
-- 모델: 오픈소스 OCR PP-OCRv5(CPU)를 Python 서버(`model/server`)로 돌려 글자를 추출하고 Claude로 파싱한다. 파싱 모델은 Opus, Sonnet, Haiku 비교 후 결정
+- 백엔드: Supabase (Postgres, 구글·카카오 로그인, Edge Functions)
+- 모델: Python 모델 서버(`model/server`)가 안내문 이미지·PDF를 Claude(`claude-sonnet-5-5`)에 바로 보내 항목을 정리한다(OCR은 쓰지 않는다). 팀 컴퓨터에서 실행하고 Cloudflare 터널로 공개한다
 - 상세 계획: `개발계획.md`, 모델 팀 할 일: `model/해야할일.md`
 
 ## 역할과 담당 영역
