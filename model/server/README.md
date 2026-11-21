@@ -73,4 +73,3 @@ uvicorn app:app --host 127.0.0.1 --port 7860
 - `app.py`: 엔드포인트, 인증, 크기와 형식 검사, 오류 코드.
 - `claude.py`: Claude 호출. 프롬프트 규칙과 제도 스키마는 `model/policy_extract.py`와 같은 것을 쓴다.
 - `mask.py`, `test_mask.py`: 번호 형식 지우기와 테스트(`python test_mask.py`).
-- `parse.py`: 배준서의 규칙 기반 파서. OCR을 쓰지 않게 되어 지금은 연결하지 않았다.
