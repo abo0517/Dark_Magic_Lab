@@ -41,8 +41,6 @@
 .ws-ui-wordmark { font-size: 21px; color: var(--ws-color-primary-dark); }
 .ws-ui-wordmark-light { font-weight: 800; }
 .ws-ui-wordmark-strong { font-weight: 800; }
-.ws-ui-demo { background: var(--ws-color-warm); color: var(--ws-color-warm-text); font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
-@media (max-width: 400px) { .ws-ui-demo { display: none; } }
 .ws-ui-brand-caption, .ws-ui-eyebrow, .ws-ui-footer { display: none; }
 
 .ws-gear {
