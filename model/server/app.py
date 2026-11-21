@@ -11,7 +11,7 @@ from starlette.formparsers import MultiPartParser
 
 import ocr
 from mask import mask
-from parse import parse
+from parse import UnreadableError, parse
 
 SECRET = os.environ.get("SHARED_SECRET", "")
 if not SECRET:
@@ -111,7 +111,10 @@ async def analyze(request: Request, file: UploadFile = File(...), x_shared_secre
     text = read(data)
     if not text.strip():
         raise ApiError(422, "UNREADABLE")
-    result = parse(mask(text))
+    try:
+        result = parse(mask(text))
+    except UnreadableError:
+        raise ApiError(422, "UNREADABLE")
     programs = result.get("programs") or []
     if not programs or all(all(empty(p.get(k)) for k in CORE) for p in programs):
         raise ApiError(422, "UNREADABLE")
