@@ -4,6 +4,7 @@
 
 ## 기술 스택
 
+- Node: v24.21.0 (팀 전원 같은 버전 사용)
 - 프론트: React 18 + Vite 5
 - 백엔드: Supabase (Postgres, Edge Functions)
 - 모델: Claude Vision (`claude-opus-5-5`), 오픈소스 OCR(PP-OCRv5)은 당일 비교 후 결정
