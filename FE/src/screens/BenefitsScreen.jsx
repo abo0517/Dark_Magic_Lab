@@ -21,7 +21,7 @@ function Slider({ items, idx, setIdx, favorites, onFavorite, onOpen }) {
   return (
     <section aria-label="대상일 수 있는 혜택">
       <div className="wm-slider-head">
-        <h2 className="ws-ui-heading">대상일 수 있는 제도 <span className="ws-alert-badge">{n}개</span></h2>
+        <h2 className="ws-ui-heading">나에게 맞을 수 있는 제도 <span className="ws-alert-badge">{n}개</span></h2>
         {n > 1 && (
           <div className="wm-slider-nav">
             <button type="button" aria-label="이전 혜택" disabled={idx === 0} onClick={() => go(idx - 1)}>‹</button>
@@ -56,8 +56,8 @@ function Slider({ items, idx, setIdx, favorites, onFavorite, onOpen }) {
                     <span>{p.summary || p.description || '제도 상세 내용은 안내문과 제출처에서 확인해 주세요.'}</span>
                     <span className="ws-ui-muted">{ageText(p)}</span>
                     <span className="wm-benefit-chips">
-                      <span>준비 서류 {(p.docs ?? []).length}개</span>
-                      <span>서류 확인하기 ⌄</span>
+                      <span>필요 서류 {(p.docs ?? []).length}개</span>
+                      <span className="wm-benefit-cta">눌러서 서류 보기 ›</span>
                     </span>
                   </button>
                 </div>
@@ -148,7 +148,6 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
     <Screen
       variant="benefits"
       title={<>{profile.nickname || '회원'}님,<br />이런 혜택을 살펴보세요.</>}
-      onBack={onBack}
       onHome={onHome}
       footer={
         <>
@@ -175,7 +174,7 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
             <Button onClick={() => setCamera(true)}>📷 안내문 촬영하기</Button>
           )}
           <Button kind="quiet" disabled={status === 'loading'} onClick={() => fileRef.current.click()}>사진·PDF 파일로 올리기</Button>
-          <p className="ws-ui-muted wm-privacy">사진은 분석을 위해 외부 AI 서비스로 전송돼요. 우리 서버에는 저장하지 않아요.</p>
+          <p className="ws-ui-muted wm-privacy">사진은 외부 AI로 전송되며 서버에는 저장하지 않아요.</p>
         </>
       }
     >
@@ -185,7 +184,6 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
           <AlertBanner alerts={alerts} />
         </details>
       )}
-      <p className="ws-ui-note" role="status">만 {profile.age}세 기준 · 혜택을 눌러 서류를 준비하세요.</p>
       {sample && <p className="ws-ui-note" role="note">현재 신청 가능한 실제 혜택이 없어 이해를 돕기 위한 가데이터 예시를 보여드려요.</p>}
       <div className="wm-category-row">
         <strong>{category ?? '카테고리를 선택해 주세요'}</strong>
@@ -201,7 +199,7 @@ export default function BenefitsScreen({ profile, category, setCategory, alertOn
           <p>다른 카테고리를 선택하거나 안내문을 촬영해 주세요.</p>
         </Card>
       )}
-      <p className="ws-ui-muted">소득·거주 조건에 따라 실제 대상은 다를 수 있어요.</p>
+      <p className="ws-ui-muted wm-privacy">소득·거주 조건에 따라 실제 대상은 다를 수 있어요.</p>
 
       <dialog ref={dialogRef} className="wm-dialog" aria-labelledby="wm-cat-title" onCancel={(e) => { e.preventDefault(); closeCategories() }}>
         <div className="wm-dialog-head">

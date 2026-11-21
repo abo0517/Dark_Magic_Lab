@@ -1,3 +1,6 @@
+import modelSample from './fixtures/model-sample.json'
+import { fromModel } from './api.js'
+
 export const mockResult = {
   easySummary: '65세 이상 어르신께 매달 일정 금액을 드리는 제도 안내문입니다. (샘플)',
   source: '공공데이터포털 · 복지서비스 목록 (샘플)',
@@ -40,13 +43,12 @@ export const mockCatalog = [
     office: '홈택스·손택스 또는 주소지 관할 세무서 · 문의 1544-9944',
     source: '국세청 · 2025년 귀속 근로·자녀장려금 기한 후 신청',
     sourceUrl: 'https://nts.go.kr/nts/na/ntt/selectNttInfo.do?mi=&nttSn=1350768',
-    docsNote: '아래 증빙은 모든 신청자에게 필요한 서류가 아니에요. 해당하는 경우에만 체크하세요. 안내문을 받은 경우 QR·손택스·ARS로 간편 신청할 수 있어요.',
     docs: ['소득 증빙자료 (안내문을 못 받았거나 소득자료가 누락된 경우)', '임대차계약서 사본 (실제 전세금이 간주전세금보다 낮아 실제 금액을 적용받을 경우)'],
   },
 ]
 
 // 목업. 서버 호출로 바꿀 때 이 함수만 교체한다. 실패는 err.code(UNREADABLE|BLURRY|CROPPED|TIMEOUT)로 reject.
-// 파일 이름으로 상황을 흉내 낸다: blur, crop, fail, slow(15초), hang(무응답)
+// 파일 이름으로 상황을 흉내 낸다: blur, crop, fail, slow(15초), hang(무응답), model-1~4(모델 팀 샘플 결과)
 export const analyze = async ({ file } = {}) => {
   const name = file?.name ?? ''
   const wait = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -56,5 +58,7 @@ export const analyze = async ({ file } = {}) => {
   if (name.includes('blur')) return reject('BLURRY')
   if (name.includes('crop')) return reject('CROPPED')
   if (name.includes('fail')) return reject('ERROR')
+  const m = /model-?(\d+)/.exec(name)
+  if (m) return fromModel(modelSample[(+m[1] - 1) % modelSample.length])
   return mockResult
 }
