@@ -1,4 +1,4 @@
-const SHEET = import.meta.env.BASE_URL + 'codex-images/bokgil-retriever-walk-v002.png'
+const SHEET = import.meta.env.BASE_URL + 'codex-images/bokgil-retriever-walk-v001.png'
 
 export default function AnimatedBokgil({ className = '', still = false }) {
   return (
