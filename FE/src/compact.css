@@ -1,0 +1,264 @@
+/* ---------- 레이아웃 ---------- */
+.ws-ui-page,
+.ws-ui-page *,
+.ws-ui-page *::before,
+.ws-ui-page *::after { box-sizing: border-box; }
+
+.ws-ui-page {
+  height: 100dvh;
+  background: var(--ws-color-bg);
+  color: var(--ws-color-text);
+  font-family: system-ui, "Malgun Gothic", sans-serif;
+  font-size: calc(var(--ws-font-size) * 0.85);
+  line-height: 1.45;
+  overflow: hidden;
+}
+.ws-ui-shell {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 400px) { .ws-ui-shell { padding: 0 18px; } }
+@media (min-width: 761px) {
+  .ws-ui-page { background: var(--ws-color-page); padding: 20px 0; }
+  .ws-ui-shell {
+    background: var(--ws-color-bg);
+    border: 1px solid var(--ws-color-shell-line);
+    border-radius: 26px;
+    box-shadow: 0 2px 14px #0000000d;
+  }
+}
+
+.ws-ui-masthead { flex: none; min-height: 66px; display: flex; align-items: center; padding-right: 108px; }
+.ws-ui-brand { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+.ws-ui-brand-avatar { width: 34px; height: 34px; border-radius: 50%; background: var(--ws-color-info); display: grid; place-items: center; flex: none; }
+.ws-ui-brand-avatar .wm-bokgil-sprite { width: 26px; height: 34px; }
+.ws-ui-wordmark { font-size: 21px; color: var(--ws-color-primary-dark); }
+.ws-ui-wordmark-light { font-weight: 300; }
+.ws-ui-wordmark-strong { font-weight: 800; }
+.ws-ui-demo { background: var(--ws-color-warm); color: var(--ws-color-warm-text); font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
+@media (max-width: 400px) { .ws-ui-demo { display: none; } }
+.ws-ui-brand-caption, .ws-ui-eyebrow, .ws-ui-footer { display: none; }
+
+.ws-gear {
+  position: absolute;
+  top: 12px;
+  right: max(24px, calc((100vw - 552px) / 2));
+  z-index: 5;
+  height: 42px;
+  min-width: 44px;
+  padding: 0 12px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ws-color-primary);
+  background: var(--ws-color-card);
+  border: 1px solid var(--ws-color-border);
+  border-radius: 12px;
+  cursor: pointer;
+}
+@media (min-width: 761px) { .ws-gear { top: 32px; } }
+
+.ws-ui-column { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.ws-ui-back { flex: none; margin-bottom: 4px; }
+.ws-ui-heading-block { flex: none; padding: 4px 0 10px; }
+.ws-ui-title {
+  margin: 0;
+  font-size: calc(var(--ws-font-size) * 1.35);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.045em;
+  word-break: keep-all;
+}
+.wm-screen-content { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 14px; padding: 4px 4px 16px; }
+.wm-screen-content > * { flex: none; }
+.wm-screen-actions {
+  flex: none;
+  display: grid;
+  gap: 8px;
+  padding: 12px 0 calc(12px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--ws-color-line);
+}
+.wm-screen-actions .ws-ui-button { width: 100%; }
+@media (max-height: 700px) {
+  .ws-ui-masthead { min-height: 56px; }
+  .ws-ui-title { font-size: calc(var(--ws-font-size) * 1.2); }
+  .wm-screen-content { gap: 10px; }
+}
+
+.ws-ui-page :focus-visible { outline: 3px solid var(--ws-color-primary); outline-offset: 3px; }
+
+/* ---------- 공통 요소 ---------- */
+.ws-ui-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: var(--ws-btn-height);
+  padding: 0 18px;
+  font: inherit; font-weight: 700; text-align: center;
+  border: 2px solid transparent; border-radius: 14px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.ws-ui-button:not(:disabled):hover { transform: translateY(-1px); }
+.ws-ui-button:disabled { opacity: 0.55; cursor: not-allowed; }
+.ws-ui-primary { background: var(--ws-color-primary); border-color: var(--ws-color-primary); color: var(--ws-color-primary-text); }
+.ws-ui-secondary { background: var(--ws-color-card); border-color: var(--ws-color-primary); color: var(--ws-color-primary); }
+.ws-ui-secondary:hover { background: var(--ws-color-info); }
+.ws-ui-quiet { min-height: 48px; padding: 0 4px; justify-self: start; background: transparent; color: var(--ws-color-primary); text-decoration: underline; }
+
+.ws-ui-card { display: grid; gap: 12px; padding: 16px; background: var(--ws-color-card); border: 1px solid var(--ws-color-line); border-radius: 18px; }
+.ws-ui-card .ws-ui-card { background: var(--ws-color-bg); }
+.ws-ui-heading { margin: 0; font-size: 1.05em; line-height: 1.3; }
+.ws-ui-page-detail .ws-ui-card > .ws-ui-heading { display: none; }
+.ws-ui-note { margin: 0; padding: 12px 14px; background: var(--ws-color-info); border-radius: 12px; }
+.ws-ui-muted { margin: 0; color: var(--ws-color-muted); font-size: 0.9em; }
+.ws-ui-error { margin: 0; color: var(--ws-color-danger); font-weight: 700; }
+.ws-ui-page p { margin: 0; }
+.ws-ui-page a { color: var(--ws-color-primary); font-weight: 700; }
+.ws-ui-status { display: grid; gap: 8px; }
+
+.wm-disclosure { padding: 10px 14px; background: var(--ws-color-warm); border-radius: 12px; display: block; }
+.wm-disclosure > summary { font-weight: 700; cursor: pointer; min-height: 44px; display: flex; align-items: center; color: var(--ws-color-warm-text); }
+.wm-disclosure > *:not(summary) { margin-top: 10px; }
+
+.ws-ui-field { display: grid; gap: 6px; font-weight: 700; }
+.ws-ui-fieldset { margin: 0; padding: 0; border: 0; min-width: 0; display: grid; gap: 6px; }
+.ws-ui-fieldset legend { padding: 0; margin-bottom: 6px; font-weight: 700; }
+.ws-ui-input {
+  width: 100%; min-height: 48px; padding: 0 12px;
+  font: inherit; color: inherit; background: var(--ws-color-card);
+  border: 1px solid var(--ws-color-border); border-radius: 12px;
+}
+.wm-grid { display: grid; gap: 8px; }
+.wm-grid-date { grid-template-columns: repeat(auto-fit, minmax(5.5em, 1fr)); }
+.wm-grid-2 { grid-template-columns: repeat(auto-fit, minmax(9em, 1fr)); }
+.wm-gender-option { display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 12px; background: var(--ws-color-card); border: 1px solid var(--ws-color-border); border-radius: 12px; font-weight: 700; }
+.wm-gender-option:has(input:checked) { border-color: var(--ws-color-primary-soft); background: var(--ws-color-info); }
+.wm-gender-option input { width: 22px; height: 22px; accent-color: var(--ws-color-primary); }
+.wm-draft-form { display: grid; gap: 14px; }
+.wm-draft-submit { position: sticky; bottom: 0; width: 100%; }
+.ws-draft-lead { display: none; }
+
+.ws-alert-badge { display: inline-block; min-width: 1.6em; padding: 0 0.5em; text-align: center; color: #fff; background: var(--ws-color-danger); border-radius: 99px; font-size: 0.85em; }
+.ws-alert-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.ws-alert-list li { padding: 18px 20px; background: var(--ws-color-info); border-left: 3px solid var(--ws-color-primary); border-radius: 4px 12px 12px 4px; }
+.ws-alert-list li.ws-alert-due, .ws-alert-list li.ws-alert-due-day { background: var(--ws-color-warm); border-left-color: var(--ws-color-danger); }
+
+/* ---------- 로그인 ---------- */
+.ws-ui-page-welcome .ws-ui-shell {
+  background:
+    radial-gradient(circle at 80% 10%, var(--ws-color-info), transparent 55%),
+    var(--ws-color-welcome);
+}
+.ws-login-accent { color: var(--ws-color-primary); }
+.ws-login-desc { font-size: 1.05em; text-align: left; }
+.ws-login-art { position: relative; flex: 1 1 auto; min-height: 160px; max-height: 300px; width: 100%; max-width: 340px; margin: 0 auto; display: grid; place-items: center; }
+.ws-login-halo { position: absolute; border-radius: 50%; }
+.ws-login-halo-a { width: 78%; aspect-ratio: 1; background: var(--ws-color-halo); }
+.ws-login-halo-b { width: 56%; aspect-ratio: 1; background: var(--ws-color-halo-warm); }
+.ws-login-route { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; }
+.ws-login-route path { stroke: var(--ws-color-road); stroke-width: 3; stroke-dasharray: 2 10; stroke-linecap: round; }
+.ws-login-route circle { fill: var(--ws-color-primary-soft); }
+.ws-login-star, .ws-login-float, .ws-login-steps, .ws-login-lead { display: none; }
+.wm-bokgil-guide { position: relative; height: 92%; max-width: 78%; aspect-ratio: 3 / 4; animation: wm-bokgil-stroll 6s ease-in-out infinite; }
+.wm-bokgil-path { position: absolute; left: 8%; bottom: 10%; width: 84%; height: 3px; background: repeating-linear-gradient(90deg, var(--ws-color-road) 0 14px, transparent 14px 28px); background-size: 28px 3px; animation: wm-bokgil-road 0.8s linear infinite; }
+.ws-login-caption { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--ws-color-muted); font-size: 0.9em; }
+.ws-login-actions { display: grid; gap: 8px; }
+.ws-login-kakao { background: var(--ws-color-kakao); border-color: var(--ws-color-kakao); color: var(--ws-color-kakao-text); }
+.ws-login-google { color: var(--ws-color-text); border-color: var(--ws-color-border); }
+.ws-login-g { color: var(--ws-color-primary); font-weight: 800; }
+.ws-login-motion-paused .wm-bokgil-sprite,
+.ws-login-motion-paused .wm-bokgil-guide,
+.ws-login-motion-paused .wm-bokgil-path { animation-play-state: paused; }
+
+/* ---------- 강아지 ---------- */
+.wm-bokgil-sprite {
+  display: block; width: 100%; height: 100%; aspect-ratio: 3 / 4;
+  background-repeat: no-repeat; background-size: 400% 100%;
+  animation: wm-bokgil-steps 0.8s steps(1, end) infinite;
+}
+.wm-bokgil-still { animation: none; }
+@keyframes wm-bokgil-steps {
+  0%, 100% { background-position: 0% 0; }
+  25% { background-position: 33.333333% 0; }
+  50% { background-position: 66.666667% 0; }
+  75% { background-position: 100% 0; }
+}
+@keyframes wm-bokgil-stroll { 0%, 100% { transform: translateX(-9px); } 50% { transform: translateX(9px); } }
+@keyframes wm-bokgil-road { to { background-position: -28px 0; } }
+
+.ws-progress-bokgil { display: flex; align-items: center; gap: 10px; padding-top: 46px; }
+.ws-progress-bokgil-track { position: relative; flex: 1; height: 13px; background: var(--ws-color-track); border: 1px solid var(--ws-color-line); border-radius: 99px; }
+.ws-progress-bokgil-fill { height: 100%; background: linear-gradient(90deg, #5475ce, var(--ws-color-primary-soft)); border-radius: 99px; transition: width 0.65s; }
+.ws-progress-bokgil-walker { position: absolute; top: 6px; width: 54px; height: 72px; transform: translate(-50%, -88%); transition: left 0.65s; pointer-events: none; }
+.ws-progress-bokgil-label { color: var(--ws-color-primary); font-weight: 800; font-variant-numeric: tabular-nums; min-width: 3em; text-align: right; }
+
+/* ---------- 혜택 ---------- */
+.wm-category-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.wm-slider-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.wm-slider-nav { display: flex; align-items: center; gap: 6px; }
+.wm-slider-nav button { width: 44px; height: 44px; font-size: 1.4em; color: var(--ws-color-primary); background: var(--ws-color-card); border: 1px solid var(--ws-color-border); border-radius: 12px; cursor: pointer; }
+.wm-slider-nav button:disabled { opacity: 0.4; cursor: not-allowed; }
+.wm-slider-view { overflow: hidden; touch-action: pan-y; }
+.wm-slider-track { display: flex; margin: 0; padding: 0; list-style: none; transition: transform 280ms ease; }
+.wm-slide { min-width: 0; padding: 2px; }
+.wm-benefit { position: relative; background: var(--ws-color-card); border: 1px solid var(--ws-color-line); border-radius: 20px; }
+.wm-benefit-body { display: grid; gap: 8px; width: 100%; padding: 16px 64px 16px 16px; font: inherit; color: inherit; text-align: left; background: none; border: 0; border-radius: 20px; cursor: pointer; }
+.wm-benefit-body strong { font-size: 1.1em; }
+.wm-benefit-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.wm-benefit-chips span { padding: 4px 10px; font-size: 0.9em; font-weight: 700; color: var(--ws-color-primary); background: var(--ws-color-info); border-radius: 99px; }
+.wm-favorite { position: absolute; top: 8px; right: 8px; z-index: 1; width: 44px; height: 44px; font-size: 1.4em; line-height: 1; color: var(--ws-color-muted); background: var(--ws-color-card); border: 1px solid var(--ws-color-line); border-radius: 50%; cursor: pointer; }
+.wm-favorite.is-on { background: var(--ws-color-star-bg); color: #8a5a00; border-color: var(--ws-color-star); }
+
+.wm-categories { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.wm-categories button { min-height: 48px; padding: 8px 12px; font: inherit; font-weight: 700; color: var(--ws-color-text); background: var(--ws-color-card); border: 1px solid var(--ws-color-chip-line); border-radius: 99px; cursor: pointer; }
+.wm-categories button[aria-pressed='true'] { color: #fff; background: var(--ws-color-primary-soft); border-color: var(--ws-color-primary-soft); }
+.wm-categories-modal button { display: grid; gap: 2px; border-radius: 16px; }
+.wm-categories-modal button span { font-size: 0.85em; font-weight: 400; color: var(--ws-color-muted); }
+.wm-cat-all { grid-column: 1 / -1; }
+
+.wm-dialog { width: min(92vw, 420px); padding: 20px; font: inherit; font-size: calc(var(--ws-font-size) * 0.85); color: var(--ws-color-text); background: var(--ws-color-card); border: 1px solid var(--ws-color-line); border-radius: 20px; }
+.wm-dialog::backdrop { background: var(--ws-color-scrim); }
+.wm-dialog * { box-sizing: border-box; }
+.wm-dialog[open] { display: grid; gap: 12px; }
+.wm-dialog p { margin: 0; }
+.wm-dialog-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.wm-dialog-close { width: 44px; height: 44px; font-size: 1.5em; background: none; border: 1px solid var(--ws-color-line); border-radius: 50%; cursor: pointer; color: var(--ws-color-text); }
+.wm-dialog :focus-visible { outline: 3px solid var(--ws-color-primary); outline-offset: 3px; }
+
+/* ---------- 서류 체크 ---------- */
+.ws-checklist-deadline { padding: 12px 14px; color: var(--ws-color-warm-text); background: var(--ws-color-warm); border-radius: 14px; }
+.ws-checklist-docs { display: grid; gap: 10px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.ws-checklist-docs legend { padding: 0; margin-bottom: 6px; font-weight: 700; }
+.ws-checklist-item { display: grid; gap: 6px; padding: 12px 14px; background: var(--ws-color-card); border: 1px solid var(--ws-color-line); border-radius: 14px; }
+.ws-checklist-row { display: flex; align-items: flex-start; gap: 10px; min-height: 44px; cursor: pointer; font-weight: 700; }
+.ws-checklist-row input { flex: none; width: 23px; height: 23px; margin-top: 2px; accent-color: var(--ws-color-primary); }
+.ws-checklist-guide-btn { min-height: 44px; padding: 0 4px; font: inherit; font-weight: 700; color: var(--ws-color-primary); background: none; border: 0; text-decoration: underline; cursor: pointer; }
+.ws-checklist-guide-panel { display: grid; gap: 6px; padding: 12px; background: var(--ws-color-bg); border: 1px solid var(--ws-color-line); border-radius: 12px; }
+.ws-checklist-guide-panel[hidden] { display: none; }
+.ws-checklist-guide-panel .ws-ui-note { background: none; padding: 4px 0 4px 12px; border-left: 4px solid var(--ws-color-apricot); border-radius: 0; }
+.ws-checklist-office { display: grid; gap: 4px; }
+
+/* ---------- 카메라 / 가까운 곳 ---------- */
+.ws-camera-overlay { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; background: var(--ws-color-scrim); }
+.ws-camera-dialog { display: grid; gap: 10px; width: min(100%, 460px); max-height: 100%; overflow-y: auto; padding: 16px; background: var(--ws-color-card); border-radius: 18px; }
+.ws-camera-head { display: flex; align-items: center; justify-content: space-between; }
+.ws-camera-video { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #000; border-radius: 12px; }
+.ws-nearby-map { width: 100%; height: 240px; border: 1px solid var(--ws-color-line); border-radius: 12px; }
+.wm-online-apply { display: grid; gap: 6px; padding-top: 10px; border-top: 1px solid var(--ws-color-line); }
+.wm-online-apply h3 { margin: 0; font-size: 1em; }
+
+/* ---------- 마이페이지 ---------- */
+.wm-saved { display: grid; gap: 2px; }
+.wm-saved-body { display: grid; gap: 4px; width: 100%; padding: 12px 14px; font: inherit; color: inherit; text-align: left; background: var(--ws-color-card); border: 1px solid var(--ws-color-line); border-radius: 14px; cursor: pointer; }
+.wm-saved-go { color: var(--ws-color-primary); font-weight: 700; }
+.wm-sizes { display: grid; gap: 8px; }
+
+/* ---------- 모션 감소 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .wm-bokgil-sprite, .wm-bokgil-guide, .wm-bokgil-path { animation: none; }
+  .wm-slider-track, .ws-progress-bokgil-fill, .ws-progress-bokgil-walker, .ws-ui-button { transition: none; }
+  .ws-ui-button:not(:disabled):hover { transform: none; }
+}
