@@ -135,6 +135,7 @@ export default function App() {
   }
 
   const saveProfileRemote = async (p) => {
+    if (!userId && import.meta.env.DEV) return saveProfile(p)
     if (!userId) throw new Error('로그인이 필요합니다')
     await storeProfile(userId, p)
     saveProfile(p)
@@ -216,6 +217,10 @@ export default function App() {
   }
 
   const login = async (provider) => {
+    if (import.meta.env.DEV && (!supabase || window.location.search.includes('demo'))) {
+      setScreen('draft')
+      return
+    }
     if (provider !== 'google') {
       setAuthError('이 로그인 방법은 준비 중이에요. 구글로 시작해 주세요.')
       return

@@ -1,5 +1,5 @@
 :root {
-  --ws-color-bg: #f8f7f3;
+  --ws-color-bg: #ffffff;
   --ws-color-text: #202c40;
   --ws-color-primary: #2448a5;
   --ws-color-primary-text: #ffffff;
@@ -15,14 +15,14 @@
   --ws-color-warm-text: #794019;
   --ws-color-danger: #a33128;
   --ws-color-success: #286442;
-  --ws-color-page: #edece7;
+  --ws-color-page: #f1f3f7;
   --ws-color-shell-line: #e4e3df;
   --ws-color-chip-line: #d6deeb;
   --ws-color-track: #e7eaf1;
   --ws-color-road: #9bafd5;
   --ws-color-star: #f6c34a;
   --ws-color-star-bg: #fff2cb;
-  --ws-color-welcome: #f2f5fc;
+  --ws-color-welcome: #ffffff;
   --ws-color-halo: #e2eaf9;
   --ws-color-halo-warm: #f9f4ea;
   --ws-color-kakao: #fee500;

@@ -57,9 +57,10 @@ test('docGuide', () => {
 
 test('toProgram', async () => {
   const { toProgram } = await import('./api.js')
-  const p = toProgram({ name: 'X', min_age: 65, max_age: null, source: 'local', sgg: '마포구', deadline: null, docs: null })
-  assert.deepEqual([p.minAge, p.maxAge, p.gu, p.deadline, p.docs], [65, undefined, '마포구', '', []])
-  assert.equal(toProgram({ name: 'Y', source: 'central', sgg: '종로구' }).gu, undefined)
+  const p = toProgram({ name: 'X', minAge: 65, maxAge: null, gu: '마포구', deadline: null, docs: null, office: null, sourceUrl: 'u' })
+  assert.deepEqual([p.minAge, p.maxAge, p.gu, p.deadline, p.docs, p.office, p.sourceUrl], [65, undefined, '마포구', '', [], '', 'u'])
+  assert.equal(toProgram({ name: 'Y', gu: '서울특별시교육청' }).gu, undefined)
+  assert.equal(toProgram({ name: 'Z', gu: null }).gu, undefined)
 })
 
 test('scan helpers', async () => {
