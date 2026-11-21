@@ -86,7 +86,7 @@ export default function SettingsScreen({
             </Button>
           </Card>
           <Card title="내 정보 변경">
-            <p>지금은 {profile.nickname || '닉네임 없음'} · 만 {profile.age}세예요. 생년월일은 저장하지 않아서 다시 골라야 해요.</p>
+            <p>지금은 {profile.nickname || '닉네임 없음'} · 만 {profile.age}세예요. 저장한 생년월일과 주소도 아래에서 변경할 수 있어요.</p>
             <DraftForm initial={profile} submitText="변경 저장하기" onDone={onSaveProfile} />
           </Card>
           <Button kind="secondary" onClick={onLogout}>로그아웃</Button>

@@ -4,13 +4,16 @@ import { GU, DONG } from '../seoul.js'
 import { koreanDate, manAge } from '../alerts.js'
 
 export function DraftForm({ onDone, submitText = '확인하고 혜택 보기', initial = {} }) {
+  const birth = /^(\d{4})-(\d{2})-(\d{2})$/.exec(initial.birthDate ?? '')
   const [f, setF] = useState({
     nickname: initial.nickname ?? '',
     gender: initial.gender ?? '',
-    y: '', m: '', d: '',
+    y: birth?.[1] ?? '', m: birth?.[2] ? String(+birth[2]) : '', d: birth?.[3] ? String(+birth[3]) : '',
     gu: initial.gu ?? '',
     dong: initial.dong ?? '',
   })
+  const [saving, setSaving] = useState(false)
+  const [error, setError] = useState('')
   const today = koreanDate()
   const thisYear = +today.slice(0, 4)
   const years = Array.from({ length: 111 }, (_, i) => thisYear - i)
@@ -26,10 +29,25 @@ export function DraftForm({ onDone, submitText = '확인하고 혜택 보기', i
   const age = manAge(+f.y, +f.m, +f.d, today)
   const dongs = DONG[f.gu]
 
-  function submit(e) {
+  async function submit(e) {
     e.preventDefault()
-    if (age === null) return
-    onDone({ nickname: f.nickname.trim(), age, gender: f.gender, gu: f.gu, dong: f.dong })
+    if (age === null || saving) return
+    setSaving(true)
+    setError('')
+    try {
+      await onDone({
+        nickname: f.nickname.trim(),
+        birthDate: `${f.y}-${String(f.m).padStart(2, '0')}-${String(f.d).padStart(2, '0')}`,
+        age,
+        gender: f.gender,
+        gu: f.gu,
+        dong: f.dong,
+      })
+    } catch {
+      setError('정보를 저장하지 못했어요. 잠시 후 다시 시도해 주세요.')
+    } finally {
+      setSaving(false)
+    }
   }
 
   return (
@@ -79,19 +97,21 @@ export function DraftForm({ onDone, submitText = '확인하고 혜택 보기', i
             </select>
           </div>
         </fieldset>
-        <p className="ws-ui-muted">생년월일은 나이 계산에만 쓰고 저장하지 않아요. 시연에는 가상 정보를 입력해 주세요.</p>
+        <p className="ws-ui-muted">닉네임, 생년월일, 성별, 선택한 구·동을 내 계정에 저장해요.</p>
       </Card>
-      <Button type="submit" className="wm-draft-submit" disabled={age === null}>
-        {age === null ? '생년월일을 선택하세요' : submitText}
+      {error && <p className="ws-ui-muted" role="alert">{error}</p>}
+      <Button type="submit" className="wm-draft-submit" disabled={age === null || saving}>
+        {saving ? '저장 중이에요...' : age === null ? '생년월일을 선택하세요' : submitText}
       </Button>
     </form>
   )
 }
 
-export default function DraftScreen({ onBack, onDone, onHome }) {
+export default function DraftScreen({ onBack, onDone, onHome, error }) {
   return (
     <Screen variant="draft" title={<>내게 맞는 혜택,<br />몇 가지만 알려주세요.</>} onBack={onBack} onHome={onHome}>
       <p className="ws-draft-lead">몇 가지 정보로 나에게 필요한 복지에 한 걸음 더 가까이.</p>
+      {error && <p className="ws-ui-muted" role="alert">{error}</p>}
       <DraftForm onDone={onDone} />
     </Screen>
   )
