@@ -60,9 +60,9 @@ export function judge(p, { age, gu }) {
   return { ok: reasons.length === 0, reasons }
 }
 
-export function deadlineText(value, today) {
+export function deadlineText(value, today, periodText = '') {
   const n = daysLeft(value, today)
-  if (n === null) return '원문에서 신청 기한을 확인하세요.'
+  if (n === null) return periodText ? `${periodText} (원문)` : '원문에서 신청 기한을 확인하세요.'
   const [y, m, d] = value.split('-').map(Number)
   const tail = n < 0 ? '마감 지남' : n === 0 ? '오늘 마감' : `${n}일 남음`
   return `${y}년 ${m}월 ${d}일까지 · ${tail}`
