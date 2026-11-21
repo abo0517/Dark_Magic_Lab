@@ -216,8 +216,8 @@ export default function App() {
   }
 
   const login = async (provider) => {
-    if (provider !== 'google' && provider !== 'kakao') {
-      setAuthError('이 로그인 방법은 준비 중이에요. 구글 또는 카카오로 시작해 주세요.')
+    if (provider !== 'google' && provider !== 'kakao' && provider !== 'naver') {
+      setAuthError('지원하지 않는 로그인 방법이에요.')
       return
     }
     if (!supabase) {
@@ -227,8 +227,11 @@ export default function App() {
     setAuthError('')
     try {
       const { error } = await supabase.auth.signInWithOAuth({
-        provider,
-        options: { redirectTo: `${window.location.origin}/` },
+        provider: provider === 'naver' ? 'custom:naver' : provider,
+        options: {
+          redirectTo: `${window.location.origin}/`,
+          scopes: provider === 'naver' ? 'openid' : undefined,
+        },
       })
       if (error) setAuthError(error.message)
     } catch {
