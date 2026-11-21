@@ -527,5 +527,32 @@
         "notes": ""
       }
     ]
+  },
+  {
+    "source": "KakaoTalk_20261121_111542486.png",
+    "programs": [
+      {
+        "name": "2025년 어르신스포츠상품권",
+        "agency": "문화체육관광부, 국민체육진흥공단(KSPO)",
+        "summary": "65세 이상 기초연금 수급자에게 스포츠 시설 이용료를 지원해요.",
+        "benefit": "5만 원권 2장, 총 10만 원",
+        "target": "65세 이상 기초연금 수급자",
+        "minAge": 65,
+        "maxAge": null,
+        "gu": "",
+        "eligibilityText": "65세 이상 기초연금 수급자",
+        "incomeAssetText": "",
+        "periodType": "quota",
+        "deadline": "",
+        "periodText": "2차 신청은 2025-09-05부터 예산 소진 시까지",
+        "applyMethod": "전화 또는 온라인(모바일 포함)",
+        "office": "전국 전화 접수 1551-9998, 어르신스포츠상품권 홈페이지(https://ssvoucher.co.kr)",
+        "docs": [],
+        "extraDocs": [],
+        "exclusions": "",
+        "contact": "1551-9998(전국 신청 전화)",
+        "notes": "지원 대상 기준은 기초연금 수급 여부. 1차 신청자도 2차를 희망하면 다시 신청해야 함. 지급은 2025년 10월부터이며 신청 시기에 따라 다름. 상품권 사용 기한은 2025-12-31."
+      }
+    ]
   }
 ]
