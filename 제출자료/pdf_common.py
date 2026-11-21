@@ -14,14 +14,14 @@ pdfmetrics.registerFont(TTFont("KR", FONT, subfontIndex=0))
 BLUE = colors.HexColor("#2448A5")
 LIGHT = colors.HexColor("#EAF0FB")
 GRAY = colors.HexColor("#788496")
-base = dict(fontName="KR", fontSize=9.2, leading=14, alignment=TA_LEFT, wordWrap="CJK")
+base = dict(fontName="KR", fontSize=9, leading=13.4, alignment=TA_LEFT, wordWrap="CJK")
 S = {
     "body": ParagraphStyle("body", **base),
     "small": ParagraphStyle("small", **{**base, "fontSize": 8, "leading": 11.5, "textColor": GRAY}),
-    "cell": ParagraphStyle("cell", **{**base, "fontSize": 8.6, "leading": 12.4}),
+    "cell": ParagraphStyle("cell", **{**base, "fontSize": 8.4, "leading": 12}),
     "head": ParagraphStyle("head", **{**base, "fontSize": 8.6, "leading": 12.4, "textColor": colors.white}),
-    "h1": ParagraphStyle("h1", **{**base, "fontSize": 13.5, "leading": 18, "textColor": BLUE, "spaceBefore": 10, "spaceAfter": 5}),
-    "h2": ParagraphStyle("h2", **{**base, "fontSize": 10.5, "leading": 15, "textColor": colors.HexColor("#203D83"), "spaceBefore": 6, "spaceAfter": 3}),
+    "h1": ParagraphStyle("h1", **{**base, "fontSize": 13.5, "leading": 18, "textColor": BLUE, "spaceBefore": 10, "spaceAfter": 5, "keepWithNext": 1}),
+    "h2": ParagraphStyle("h2", **{**base, "fontSize": 10.5, "leading": 15, "textColor": colors.HexColor("#203D83"), "spaceBefore": 6, "spaceAfter": 3, "keepWithNext": 1}),
     "title": ParagraphStyle("title", **{**base, "fontSize": 20, "leading": 27, "textColor": colors.HexColor("#203D83")}),
     "sub": ParagraphStyle("sub", **{**base, "fontSize": 10.5, "leading": 15, "textColor": GRAY}),
 }
