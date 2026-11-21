@@ -6,12 +6,12 @@ const API = {
   central: {
     list: 'https://apis.data.go.kr/B554287/NationalWelfareInformationsV001/NationalWelfarelistV001',
     detail: 'https://apis.data.go.kr/B554287/NationalWelfareInformationsV001/NationalWelfaredetailedV001',
-    listQ: { callTp: 'L', srchKeyCode: '003' }, detailQ: { callTp: 'D' }, target: 'tgtrDtlCn',
+    listQ: { callTp: 'L', srchKeyCode: '003' }, detailQ: { callTp: 'D' }, target: 'tgtrDtlCn', apply: '',
   },
   local: {
     list: 'https://apis.data.go.kr/B554287/LocalGovernmentWelfareInformations/LcgvWelfarelist',
     detail: 'https://apis.data.go.kr/B554287/LocalGovernmentWelfareInformations/LcgvWelfaredetailed',
-    listQ: { srchKeyCode: '003' }, detailQ: {}, target: 'sprtTrgtCn',
+    listQ: { srchKeyCode: '003' }, detailQ: {}, target: 'sprtTrgtCn', apply: 'aplyMtdCn',
   },
 }
 
@@ -50,6 +50,7 @@ Deno.serve(async (req) => {
   const rows = p.get('rows') ?? '100'
   const ctpv = p.get('ctpv')
   const details = Math.min(Number(p.get('details') ?? 0), 100)
+  const after = p.get('after') ?? ''
 
   const db = createClient(Deno.env.get('SUPABASE_URL')!, Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!)
   let calls = 0
@@ -67,20 +68,26 @@ Deno.serve(async (req) => {
       if (error) throw new Error('db upsert failed')
     }
 
-    let fetched = 0, failed = 0
+    let fetched = 0, failed = 0, lastId = after
     if (details > 0) {
+      // shortcut: 지자체는 신청 방법 원문을 office에 임시 저장, 모델 추출이 정확한 제출처로 덮어쓸 때까지. after로 이어 받아 빈 상세를 반복 조회하지 않는다
+      const need = cfg.apply ? 'office' : 'eligibility'
       const { data } = await db.from('policies').select('serv_id')
-        .eq('source', source).is('eligibility', null).limit(details)
+        .eq('source', source).is(need, null).gt('serv_id', after).order('serv_id').limit(details)
       for (const row of data ?? []) {
+        lastId = row.serv_id
         try {
           const d = await call(cfg.detail, { ...cfg.detailQ, servId: row.serv_id }); calls++
-          const text = s(find(d, cfg.target))
-          if (text) await db.from('policies').update({ eligibility: text }).eq('source', source).eq('serv_id', row.serv_id)
+          const patch: Record<string, string> = {}
+          const target = s(find(d, cfg.target)), apply = cfg.apply ? s(find(d, cfg.apply)) : null
+          if (target) patch.eligibility = target
+          if (apply) patch.office = apply
+          if (Object.keys(patch).length) await db.from('policies').update(patch).eq('source', source).eq('serv_id', row.serv_id)
           fetched++
         } catch { failed++ }
       }
     }
-    return json({ source, page, totalCount: find(x, 'totalCount') ?? null, upserted: list.length, detailsFetched: fetched, detailsFailed: failed, apiCalls: calls })
+    return json({ source, page, totalCount: find(x, 'totalCount') ?? null, upserted: list.length, detailsFetched: fetched, detailsFailed: failed, lastId, apiCalls: calls })
   } catch (e) {
     return json({ error: (e as Error).message, apiCalls: calls }, 502)
   }
