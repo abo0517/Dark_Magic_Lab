@@ -56,14 +56,14 @@ uvicorn app:app --host 127.0.0.1 --port 7860
    cloudflared tunnel --url http://127.0.0.1:7860
    ```
    출력에 나오는 `https://무작위이름.trycloudflare.com` 주소가 서버의 공개 주소다.
-5. **백엔드에 전달.** Supabase Edge Function의 비밀값(secrets)에 `MODEL_SERVER_URL`(위 주소)과 `MODEL_SHARED_SECRET`(1번 값)을 넣게 한다. 함수는 `POST {MODEL_SERVER_URL}/analyze`에 `file`과 헤더 `X-Shared-Secret`을 보낸다.
-6. **끝까지 같은 터널 유지.** 터널 주소는 실행할 때마다 바뀐다. 터널을 껐다 켜면 5번의 `MODEL_SERVER_URL`을 다시 바꿔야 하므로 시연이 끝날 때까지 두 창(서버, 터널)을 닫지 않는다.
+5. **백엔드에 전달.** Supabase Edge Function의 비밀값(secrets)에 `OCR_SERVER_URL`(위 주소)과 `OCR_SHARED_SECRET`(1번 값)을 넣게 한다. 함수는 `POST {OCR_SERVER_URL}/analyze`에 `file`과 헤더 `X-Shared-Secret`을 보낸다.
+6. **끝까지 같은 터널 유지.** 터널 주소는 실행할 때마다 바뀐다. 터널을 껐다 켜면 5번의 `OCR_SERVER_URL`을 다시 바꿔야 하므로 시연이 끝날 때까지 두 창(서버, 터널)을 닫지 않는다.
 
 주의
 - 터널 도구의 `--allowed-mail` 옵션은 켜지 않는다. 이메일 인증이 필요해져서 Supabase가 호출하지 못한다.
 - 빠른 터널에는 가동 시간 보장이 없고, 동시에 처리 중인 요청은 200개까지다(공식 문서 기준). 시연 규모에는 충분하다.
 - 시연하는 동안 컴퓨터를 절전 모드로 두지 않고 전원과 인터넷을 유지한다.
-- 이 컴퓨터의 `SHARED_SECRET`과 백엔드의 `MODEL_SHARED_SECRET`이 다르면 401 `UNAUTHORIZED`가 나온다.
+- 이 컴퓨터의 `SHARED_SECRET`과 백엔드의 `OCR_SHARED_SECRET`이 다르면 401 `UNAUTHORIZED`가 나온다.
 - 설치: `pip install -r requirements.txt`(fastapi, uvicorn, python-multipart, anthropic).
 
 ## 로그
