@@ -33,7 +33,8 @@ export default function NoticeScreen({ data, profile, applied, onToggleApplied, 
             {data.todos.map((t) => (
               <li key={t.text}>
                 <span>{t.text}</span>
-                <strong>{deadlineText(t.deadline, today)}</strong>
+                {t.detail && <small className="ws-ui-muted">{t.detail}</small>}
+                <strong>{deadlineText(t.deadline, today, t.periodText)}</strong>
               </li>
             ))}
           </ol>
@@ -51,7 +52,7 @@ export default function NoticeScreen({ data, profile, applied, onToggleApplied, 
                   {unsure && <span className="wm-badge-check">확인 필요</span>}
                 </span>
                 <strong className="wm-fact-value">{unsure ? '원문에서 확인하세요.' : f.value}</strong>
-                {f.evidence ? (
+                {f.evidence && f.evidence !== f.value ? (
                   <blockquote className="wm-fact-quote"><span>원문</span> {f.evidence}</blockquote>
                 ) : (
                   unsure && <p className="ws-ui-muted">사진에서 잘 읽히지 않았어요. 안내문 원문에서 직접 확인해 주세요.</p>

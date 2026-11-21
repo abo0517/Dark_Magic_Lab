@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { JourneyContext } from './journey.js'
-import { analyze, mockCatalog, mockResult } from './mock.js'
+import { analyze as analyzeMock, mockCatalog, mockResult } from './mock.js'
+import { analyzeRemote, hasAnalyze } from './api.js'
 import { koreanDate } from './alerts.js'
 import { shrinkImage, withTimeout } from './scan.js'
 import { Screen, ApplyButton } from './components/UI.jsx'
@@ -131,7 +132,7 @@ export default function App() {
 
   const scan = async (selection) => {
     const file = await shrinkImage(selection.file)
-    const result = await withTimeout(analyze({ ...selection, file }))
+    const result = await withTimeout((hasAnalyze ? analyzeRemote : analyzeMock)({ ...selection, file }))
     if (selection.signal?.aborted) return
     setData(result)
     setScreen('notice')

@@ -1,3 +1,6 @@
+import modelSample from './fixtures/model-sample.json'
+import { fromModel } from './api.js'
+
 export const mockResult = {
   easySummary: '65세 이상 어르신께 매달 일정 금액을 드리는 제도 안내문입니다. (샘플)',
   source: '공공데이터포털 · 복지서비스 목록 (샘플)',
@@ -46,7 +49,7 @@ export const mockCatalog = [
 ]
 
 // 목업. 서버 호출로 바꿀 때 이 함수만 교체한다. 실패는 err.code(UNREADABLE|BLURRY|CROPPED|TIMEOUT)로 reject.
-// 파일 이름으로 상황을 흉내 낸다: blur, crop, fail, slow(15초), hang(무응답)
+// 파일 이름으로 상황을 흉내 낸다: blur, crop, fail, slow(15초), hang(무응답), model-1~4(모델 팀 샘플 결과)
 export const analyze = async ({ file } = {}) => {
   const name = file?.name ?? ''
   const wait = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -56,5 +59,7 @@ export const analyze = async ({ file } = {}) => {
   if (name.includes('blur')) return reject('BLURRY')
   if (name.includes('crop')) return reject('CROPPED')
   if (name.includes('fail')) return reject('ERROR')
+  const m = /model-?(\d+)/.exec(name)
+  if (m) return fromModel(modelSample[(+m[1] - 1) % modelSample.length])
   return mockResult
 }

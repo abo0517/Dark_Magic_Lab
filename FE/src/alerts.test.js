@@ -70,3 +70,34 @@ test('scan helpers', async () => {
   await assert.rejects(withTimeout(new Promise(() => {}), 20), { code: 'TIMEOUT' })
   assert.equal(await withTimeout(Promise.resolve(1), 20), 1)
 })
+
+test('deadlineText period fallback', () => {
+  assert.equal(deadlineText('', '2026-11-21', '격리 종료 다음 날부터 90일'), '격리 종료 다음 날부터 90일 (원문)')
+  assert.equal(deadlineText('2026-11-21', '2026-11-21', '무시됨'), '2026년 11월 21일까지 · 오늘 마감')
+})
+
+test('fromModel with real model output', async () => {
+  const { fromModel } = await import('./api.js')
+  const fs = await import('node:fs')
+  const rows = JSON.parse(fs.readFileSync(new URL('../../model/ClaudeAPI/claudeVision_test.json', import.meta.url), 'utf8'))
+  assert.ok(rows.length >= 1)
+  for (const { result } of rows) {
+    const d = fromModel(result)
+    assert.ok(Array.isArray(d.programs) && Array.isArray(d.todos) && Array.isArray(d.facts))
+    for (const p of d.programs) {
+      assert.ok(p.name)
+      assert.ok(p.gu === undefined || typeof p.gu === 'string')
+      assert.ok(p.deadline === '' || /^\d{4}-\d{2}-\d{2}$/.test(p.deadline))
+      assert.ok(Array.isArray(p.docs))
+    }
+    for (const p of d.programs) assert.ok(p.gu === undefined || ['강남구','강동구','강북구','강서구','관악구','광진구','구로구','금천구','노원구','도봉구','동대문구','동작구','마포구','서대문구','서초구','성동구','성북구','송파구','양천구','영등포구','용산구','은평구','종로구','중구','중랑구'].includes(p.gu))
+  }
+  const ready = { facts: [], todos: [], programs: [] }
+  assert.equal(fromModel(ready), ready)
+  const r = fromModel({ easySummary: 'x', programs: [{ name: 'A', gu: '인천시', deadline: '2026-02-30', docs: ['신분증'], extraDocs: [{ name: '통장', condition: '필요 시' }] }] })
+  assert.equal(r.programs[0].gu, undefined)
+  assert.equal(r.programs[0].region, '인천시')
+  assert.equal(r.programs[0].deadline, '2026-02-30')
+  assert.deepEqual(r.programs[0].docs, ['신분증', '통장 (필요 시)'])
+  assert.equal(r.facts.find((f) => f.label === '지원 금액').uncertain, true)
+})
