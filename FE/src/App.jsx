@@ -216,8 +216,8 @@ export default function App() {
   }
 
   const login = async (provider) => {
-    if (provider !== 'google') {
-      setAuthError('이 로그인 방법은 준비 중이에요. 구글로 시작해 주세요.')
+    if (provider !== 'google' && provider !== 'kakao') {
+      setAuthError('이 로그인 방법은 준비 중이에요. 구글 또는 카카오로 시작해 주세요.')
       return
     }
     if (!supabase) {
@@ -227,12 +227,12 @@ export default function App() {
     setAuthError('')
     try {
       const { error } = await supabase.auth.signInWithOAuth({
-        provider: 'google',
+        provider,
         options: { redirectTo: `${window.location.origin}/` },
       })
       if (error) setAuthError(error.message)
     } catch {
-      setAuthError('구글 로그인을 시작하지 못했어요. 잠시 후 다시 시도해 주세요.')
+      setAuthError('로그인을 시작하지 못했어요. 잠시 후 다시 시도해 주세요.')
     }
   }
 
