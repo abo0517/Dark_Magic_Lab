@@ -7,7 +7,7 @@ const STEPS = [
   ['03', '서류 준비하기', '하나씩 확인하며 준비'],
 ]
 
-export default function LoginScreen({ onLogin }) {
+export default function LoginScreen({ onLogin, error }) {
   return (
     <Screen
       variant="welcome"
@@ -22,6 +22,7 @@ export default function LoginScreen({ onLogin }) {
           <Button kind="secondary" className="ws-login-google" onClick={() => onLogin('google')}>
             <span className="ws-login-g" aria-hidden="true">G</span> 구글로 시작하기
           </Button>
+          {error && <p className="ws-ui-muted" role="alert">{error}</p>}
         </div>
       }
     >
