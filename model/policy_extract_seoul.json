@@ -1,0 +1,4860 @@
+{
+ "rows": [
+  {
+   "serv_id": "WLF00000013",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음). 지원대상자 거주지 구청에서 발급된 무료진료증을 지참하여 지정 의료기관(약국) 이용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000661",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 관할 동주민센터",
+   "apply_method": "방문(거주지 관할 동주민센터 신청). 단, 서울시수당(독립유공생활지원, 생활보조, 참전명예, 보훈예우) 수령자의 보훈예우수당은 직권 지급되어 동주민센터 신청 불필요",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00000664",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "1권역: 은평어르신돌봄통합지원센터(구산, 녹번, 응암1~3, 역촌, 신사1~2, 증산, 수색동) / 2권역: 시립은평노인종합복지관(대조, 불광1~2, 갈현1~2, 진관동)",
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000666",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "저소득 중증장애인 유료방송신청서",
+    "개인정보제공동의서"
+   ],
+   "office": "거주지 동주민센터",
+   "apply_method": "방문 신청 및 접수: 거주지 동주민센터, 대상자 결정: 은평구 장애인복지과",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000691",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동주민센터",
+   "apply_method": "방문 - 거주지 동주민센터에 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000692",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 관할 동주민센터",
+   "apply_method": "방문 신청: 거주지 관할 동주민센터에 신청 → 자치구 결정·통지 → 대상자에게 서비스 시행",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000695",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000696",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 (동주민센터로 지원 신청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000697",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000698",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문, 전화. 동 주민센터 업무 담당자에게 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000724",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "국가유공자증(신분증)",
+    "통장사본"
+   ],
+   "office": "거주지 동주민센터",
+   "apply_method": "거주지 동주민센터 방문 신청 (방문, 인터넷)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000725",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 - 동주민센터에 신청 후 익월부터 사용 가능(국비보조 및 시비추가로 제공되는 활동보조 시간을 모두 소진한 후 사용)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000726",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동주민센터",
+   "apply_method": "방문 신청: 희망자가 거주지 동주민센터에 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000730",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000753",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000766",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 금천구청 가족정책과",
+   "apply_method": "전화, 이메일, 인터넷(QR) 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000767",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000770",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터 및 관내 제공기관",
+   "apply_method": "방문. 동주민센터 및 관내 제공기관의 신청 접수 및 추천, 세대 방문 및 실태조사(동주민센터 또는 구청), 수급자격심의위원회 상정 후 지원 여부 및 급여량 심의(결정)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000789",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000790",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000792",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000795",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000796",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000816",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "별도 신청 없음",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000817",
+   "source": "local",
+   "min_age": null,
+   "max_age": 18,
+   "deadline": null,
+   "docs": [
+    "입양아동 양육보조금 등 신청서",
+    "입양사실확인서",
+    "통장사본",
+    "장애인등록증 (장애가 있는 아동의 경우)",
+    "의사소견서 (질환을 앓고 있는 아동의 경우 장애인등록증 대신 제출)"
+   ],
+   "office": "서울특별시 강남구 복지생활국 가족정책과",
+   "apply_method": "방문, 우편 / 지급방법: 입양아동 또는 양부모 계좌이체",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000819",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "보훈수당 신청서 및 관련서식"
+   ],
+   "office": "송파구청 복지정책과, 거주지 동주민센터",
+   "apply_method": "방문 신청 (구청 복지정책과 또는 거주지 동주민센터) 또는 보훈단체 추천",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000820",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000821",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "보훈수당 신청서 및 관련서식"
+   ],
+   "office": "동 주민센터",
+   "apply_method": "방문 신청 (동 주민센터에서 신청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000822",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "거주지 동 주민센터",
+   "apply_method": "방문: 거주지 동 주민센터에 신청서 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000823",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000843",
+   "source": "local",
+   "min_age": 9,
+   "max_age": 24,
+   "deadline": null,
+   "docs": null,
+   "office": "읍·면·동 주민센터, 복지로 온라인(www.bokjiro.go.kr)",
+   "apply_method": "읍·면·동 주민센터 방문 신청 또는 복지로 온라인 신청. 신청인은 청소년 본인 또는 부모(부모의 사정으로 신청이 어렵거나 주양육자가 부모가 아닌 경우 친족, 후견인, 법정대리인 또는 실질적 양육자가 신청 가능). 온라인 신청은 청소년과 세대를 같이 하는 부모, 형제, 자매, 배우자만 가능",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000844",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 동주민센터",
+   "apply_method": "주소지 동주민센터 방문하여 서류 접수. 동 담당자가 현지 사실조사 후 어르신복지과로 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00000846",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "동주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000847",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "서울특별시 자영업자 고용보험료 지원사업 신청서",
+    "동의서"
+   ],
+   "office": null,
+   "apply_method": "신청 접수(온라인, 방문) → 대상자 확정(월별) → 납부한 보험료 환급(월별)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00000955",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "출산통합처리신청서"
+   ],
+   "office": "거주지 동주민센터",
+   "apply_method": "방문, 인터넷. 부 또는 모가 거주지 동주민센터를 방문하여 동장에게 신청서 제출",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00000976",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000977",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문: 수리를 원하는 장애인이 휠체어 수리지정 업체를 사전 확인한 후 동주민센터를 방문하여 신청서 작성. 휠체어 수리 후 수리업체에서 수리비 청구",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00000978",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "대상자의 주소지 관할 동주민센터",
+   "apply_method": "대상자의 주소지 관할 동주민센터 방문신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000979",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주 동주민센터 또는 용산구청 복지정책과",
+   "apply_method": "방문 신청: 거주 동주민센터 또는 구청 복지정책과",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000980",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "거주지 관할 동 주민센터",
+   "apply_method": "방문 신청: 대상자(장애인 가정의 부 또는 모)가 동 주민센터에 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00000981",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000982",
+   "source": "local",
+   "min_age": 18,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00000999",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001000",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "신청자가 방문하여 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001001",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001003",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "입양사실확인서(입양기관발급)",
+    "예금통장 사본",
+    "장애진단서 등 관련서류 (입양아동이 장애아동일 경우)"
+   ],
+   "office": "광진구청 가정복지과",
+   "apply_method": "방문 신청: 입양신고 후 60일 이내에 입양축하금 지원 신청서를 광진구청장에게 제출",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00001004",
+   "source": "local",
+   "min_age": 60,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "관할 동주민센터",
+   "apply_method": "방문 / 본인 신청 및 동주민센터에서 돌봄사각지대 어르신 발굴",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001027",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001028",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "동 주민센터에서 대상자 선정",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001052",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001054",
+   "source": "local",
+   "min_age": null,
+   "max_age": 65,
+   "deadline": null,
+   "docs": null,
+   "office": "구립 성북장애인복지관",
+   "apply_method": "전화 또는 내방(방문)",
+   "period_type": "quota"
+  },
+  {
+   "serv_id": "WLF00001212",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 (동 주민센터에 신청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001213",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인증명서 또는 복지카드",
+    "수급자·차상위 증명서 (기초생활수급자 및 차상위 장애인으로 지원받는 경우)"
+   ],
+   "office": "보장구: 케어런의료기 / 보청기: 강북구수어통역센터",
+   "apply_method": "방문, 전화. 보장구는 케어런의료기에 신청, 보청기는 강북구수어통역센터에 신청",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00001214",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001215",
+   "source": "local",
+   "min_age": 100,
+   "max_age": 100,
+   "deadline": null,
+   "docs": [
+    "효도지원금 신청서"
+   ],
+   "office": "동주민센터",
+   "apply_method": "동주민센터를 방문하여 효도지원금 신청서를 제출(신청서 제출은 효도지원금 신청 첫 해에 한함)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001218",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 관할 동 주민센터",
+   "apply_method": "방문 신청 (주소지 관할 동 주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001284",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가유공자(유족)증",
+    "통장사본",
+    "보훈예우수당 지급신청서"
+   ],
+   "office": "주소지 주민센터",
+   "apply_method": "방문신청 (주소지 주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001299",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 주소 관할 동주민센터",
+   "apply_method": "방문 신청: 거주지 주소 관할 동주민센터에 신청 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001341",
+   "source": "local",
+   "min_age": 9,
+   "max_age": 18,
+   "deadline": null,
+   "docs": [
+    "발급신청서",
+    "신청인 사진 1매",
+    "개인정보 제공 동의서",
+    "대리인 신분증 (대리인이 신청하는 경우(공통))",
+    "청소년의 주민등록등본 또는 초본 (친권자가 신청하며 청소년과 주소지가 다른 경우)",
+    "가족관계증명서 (친권자가 신청하며 청소년과 주소지가 다른 경우)",
+    "청소년의 기본증명서 또는 법원결정문 (후견인이 신청하는 경우)",
+    "재직증명서 등 (청소년시설 또는 아동복지시설에서 청소년을 실질적으로 보호하는 사람이 신청하는 경우)"
+   ],
+   "office": "가까운 주민센터",
+   "apply_method": "방문 또는 인터넷. 주소지 상관없이 가까운 주민센터에서 신청. 청소년 본인 또는 대리인 신청 가능",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001775",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "서비스 본인부담금 영수증",
+    "산모 명의 통장 사본"
+   ],
+   "office": "서울특별시 도봉구 보건소 지역보건과",
+   "apply_method": "방문접수 또는 이메일접수",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00001806",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인가정출산지원금 신청서"
+   ],
+   "office": "거주지 동 주민센터",
+   "apply_method": "방문 (거주지 동 주민센터 신청 및 접수 후 구청 장애인복지과에서 지원대상자 결정 및 지급)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00001842",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "구립동대문장애인종합복지관",
+   "apply_method": "방문, 전화로 구립동대문장애인종합복지관에 신청 후 대상자 선정",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001852",
+   "source": "local",
+   "min_age": 18,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터 접수",
+   "apply_method": "방문, 우편",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001856",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "강북구수어통역센터, 케어런의료기",
+   "apply_method": "방문, 전화. 강북구수어통역센터: 개별적 수리 후 수어통역센터를 통하여 수리비 신청. 케어런의료기 전화상담 및 내방상담",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001859",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "해당 동주민센터",
+   "apply_method": "방문 신청(해당 동주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001876",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "신청서",
+    "출생증명서 또는 주민등록등본(가족관계증명서)",
+    "장애인 본인 명의 입금계좌 통장사본"
+   ],
+   "office": "관할 동 주민센터",
+   "apply_method": "방문 신청 (관할 동 주민센터)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00001894",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "사망위로금 신청서",
+    "사망확인이 가능한 서류",
+    "수당 수령받을 통장사본"
+   ],
+   "office": "거주지 관할 동주민센터",
+   "apply_method": "방문 (거주지 관할 동주민센터로 신청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00001941",
+   "source": "local",
+   "min_age": 3,
+   "max_age": 64,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "개인정보제공 동의서",
+    "통장 사본",
+    "복지카드 또는 장애인증명서",
+    "일상생활동작검사서가 첨부된 진단서 또는 소견서(2022. 1. 1. 이후 발급)",
+    "위임장 및 대리인 신분증 (대리 신청 해당자)",
+    "대리인 관계 증명서류(주민등록등본 또는 가족관계증명서) (대리 신청 해당자)",
+    "대리수령 신청서(제3자 계좌 지급 동의서) (대리 신청 해당자)"
+   ],
+   "office": "동주민센터",
+   "apply_method": "서류 구비 후 동주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00001945",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가보훈대상자 사망위로금 지급신청서"
+   ],
+   "office": "주소지 동주민센터",
+   "apply_method": "주소지 동주민센터 방문 신청(신청서 작성 제출)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002013",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "국민건강보험공단에서 대상자를 통보받아 지원대상자를 결정하며, 별도 신청 방법은 글에 명시되지 않음",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002016",
+   "source": "local",
+   "min_age": 9,
+   "max_age": 18,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "홈페이지상 학교 밖 청소년 도움센터 친구랑 등록 후 학교 밖 청소년 교육참여수당 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002021",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "보건소",
+   "apply_method": "직접 방문 또는 온라인(복지로) 신청. 이용절차: (대상자) 서비스 신청 → (보건소) 서비스 유형 결정 및 자격 결정 여부 통지 → (대상자) 제공기관 선택 및 계약 → (대상자) 서비스 이용",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002060",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "무지개장난감세상",
+   "apply_method": "방문하여 장난감세상 회원가입 후 이용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002061",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "각 동 주민센터",
+   "apply_method": "방문, 인터넷. 1) 각 동 주민센터 신청 → 카드발급 → 카드사용자 시스템 등록 → 카드사용 2) 성동구청 홈페이지 신청 → 동 주민센터 방문하여 카드발급 → 카드사용자 시스템 등록 → 카드사용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002062",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인복지카드",
+    "의료급여증"
+   ],
+   "office": "보장구 클린센터",
+   "apply_method": "장애인복지카드, 의료급여증과 보장구를 가지고 보장구 클린센터로 방문하여 수리의뢰 (전화 문의 가능)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002087",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002088",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "보훈예우수당 신청서",
+    "국가보훈대상자 신분증 또는 확인서",
+    "통장사본"
+   ],
+   "office": "주민등록상 관할 주소지 동 주민센터",
+   "apply_method": "방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002109",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동 주민센터",
+   "apply_method": "방문 (연초 거주지 동 주민센터에 방문신청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002110",
+   "source": "local",
+   "min_age": 6,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "은평구 장애인활동기관 및 동주민센터",
+   "apply_method": "방문 신청 (은평구 장애인활동기관 및 동주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002111",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "저소득 중증장애인 유료방송신청서",
+    "개인정보제공동의서"
+   ],
+   "office": "거주지 동주민센터",
+   "apply_method": "방문 신청: 거주지 동주민센터에서 방송요금 지원 신청 후 은평구 장애인복지과에서 대상자 결정, 이후 지역케이블방송사가 방송 시청을 위한 장비(STB 및 B-SMT) 설치",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002112",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "별도 신청 없이 국민건강보험공단에서 대상자 명단을 통보받아 적정성 검토 후 지원대상자 선정",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002133",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인 이동기기 수리 신청서 및 의뢰서"
+   ],
+   "office": "거주지 관할 동주민센터",
+   "apply_method": "방문 신청: 장애인 이동기기 수리비 지원 신청서 및 의뢰서를 작성하여 거주지 관할 동주민센터에 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002134",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002135",
+   "source": "local",
+   "min_age": 9,
+   "max_age": 18,
+   "deadline": null,
+   "docs": [
+    "청소년증 발급 신청서",
+    "사진 1매(반명함판)",
+    "대리를 증명할 수 있는 서류 (대리인이 신청할 경우)"
+   ],
+   "office": "주소지와 관계없이 전국 읍/면/동 주민센터",
+   "apply_method": "방문 신청. 주소지와 관계없이 전국 읍/면/동 주민센터에서 신청(대리인이 신청할 경우 대리를 증명할 수 있는 서류 필요)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002157",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002158",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "건강보험 납부 고지서"
+   ],
+   "office": "동 주민센터",
+   "apply_method": "동 주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002159",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002160",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 동주민센터 또는 민원여권과",
+   "apply_method": "방문신청(주소지 동주민센터 또는 민원여권과에서 출생신고 후 출생축하금 신청) 또는 온라인(정부24 www.gov.kr '행복출산' 신청 시 지자체서비스 중 출생축하금 신청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002161",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동 주민센터",
+   "apply_method": "방문 신청: 거주지 동 주민센터에 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002162",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "관할 동주민센터, 광진구청 복지돌봄과",
+   "apply_method": "신청서류를 구비하여 관할 동주민센터 또는 구청 복지돌봄과 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002168",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "등본 또는 직장주소가 확인되는 서류"
+   ],
+   "office": "1호점(중화2동, 중랑역로3길 28) 436-3670 / 2호점(면목5동, 동일로 591) 439-6700 / 3호점(신내1동, 신내역로1길 142) 3421-0030",
+   "apply_method": "각 호점에 방문하여 회원가입(연회비 1만원) 후 장난감 대여. 방문, 전화, 인터넷으로 이용 가능(2021년 6월 중순 이후 홈페이지에서 방문시간 또는 대여놀잇감 예약 시행 예정, 시기는 변경될 수 있음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002181",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002202",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002204",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 관할 동 주민센터",
+   "apply_method": "방문 신청 (주소지 관할 동 주민센터)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002205",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "강남구청 어르신복지과",
+   "apply_method": "방문 (국민건강보험공단에서 대상자 명단을 구에 통보 → 구에서 대상자 연령·보험료 확인 조사 → 지원대상자 명단 확정 후 공단에 통보)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002206",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "사망진단서",
+    "말소자 초본",
+    "신청인의 신분증",
+    "통장"
+   ],
+   "office": "거주 읍면동 주민센터",
+   "apply_method": "거주 읍면동 주민센터에서 직접 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002207",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "행복출산원스톱통합처리신청서 또는 출산양육지원신청서(동주민센터에 비치) 중 택일",
+    "부모 명의 통장 사본 1부",
+    "방문하는 부모(보호자) 신분증"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문(동주민센터에 신청, 구청접수 불가)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002208",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "수리업체: 서대문햇살아래장애인자립생활센터",
+   "apply_method": "방문 (민원인이 센터에 전화로 수리 신청 → 출장(또는 방문)수리 → 센터에서 매달 수리비용을 구청에 청구 → 수리내역서 확인 후 수리비를 센터에 지급)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002209",
+   "source": "local",
+   "min_age": 60,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 - 동주민센터에 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002210",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002224",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002227",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문: 강남구 휠체어 수리지정업체 4개소(엠코리아홈케어스, 케어존, 휠로피아, 액티피아) 중 수리를 의뢰할 곳을 선택하여 동주민센터에 신청 → 동주민센터에서 지정업체에 수리의뢰 → 지정업체에서 수리 후 매월 구청으로 수리비 청구 → 구청에서 월별 수리비 지급 및 정산",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002229",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "각 보훈단체장의 생활실태조사 파악 후 지급 대상자 추천, 서울지방보훈청 생활등급 확인 후 최종 선정",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002230",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002231",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002234",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "서울형 기초보장제도 급여 신청서"
+   ],
+   "office": "주소지 자치구 또는 동 주민센터",
+   "apply_method": "방문: 주소지 자치구 또는 동 주민센터 상담을 통해 신청. 신청(상담) → 조사(공적조회, 방문상담 등) → 1차 결정(기초수급자 적정여부 결정: 부적합) → 2차 결정(서울형 기초보장제도 적정여부 결정) → 적합시 지원",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002235",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문. 위기 신고(다산콜센터 120 또는 동주민센터) → 위기상황 확인(동주민센터) → 동사례회의 개최(지원여부 및 지원항목 결정) → 지원 → 사후관리",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002249",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인가정 출산지원금 신청서",
+    "통장사본",
+    "개인정보 제공 및 활용 동의서"
+   ],
+   "office": "관할 동 주민센터",
+   "apply_method": "방문, 인터넷",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002251",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 - 장애인활동지원 제공기관을 통해 동주민센터에 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002252",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002255",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 자치구 또는 동 주민센터",
+   "apply_method": "방문: 주소지 자치구 또는 동 주민센터 상담을 통해 신청. 조사체계: 신청(상담)[동주민센터] → 조사(주택 및 소득·재산 등)[자치구청] → 결정(적합 또는 부적합)[자치구청] → 지급[자치구청]",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002278",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 - 동 주민센터 신청 접수(예산 소진 시 대기자로 관리)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002279",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002280",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "사회보장정보시스템에서 대상자 추출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002302",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002306",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장수축하금 지급신청서"
+   ],
+   "office": "읍/면/동 주민센터",
+   "apply_method": "방문 신청: 읍/면/동 주민센터로부터 안내를 받은 후 장수축하금 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002307",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002308",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 송파구 주민복지국 생활보장과",
+   "apply_method": "국민건강보험공단 송파지사장이 매월 지원대상자 명단을 작성하여 구청장에게 통보하고, 구청장이 예산의 범위 내에서 대상자의 적정성 여부를 검토하여 지원",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002326",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "강서구청 아동청소년과",
+   "apply_method": "방문",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002327",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002328",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "실직증명서, 수용증명서, 행방불명 또는 실종신고서, 공과금 연체고지서, 진단서 등 (생계비 신청 시 위기상황 증빙)",
+    "진료비 내역서, 진단서 등 (최근 6개월 이내 서류) (의료비 신청 시)",
+    "화재증명서, 화재현장 사진, 기타 자연재해 증명서 등 (주거비 신청 시)",
+    "사망진단서, 출생증명서 등 (장제비 및 해산비 신청 시)"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문: 동주민센터 방문 → 동주민센터 사회복지담당자와 상담 → 생활실태 조사 → 결정 및 지원요청 → 대상자에게 지원 및 통보",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002332",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": "2026-11-30",
+   "docs": [
+    "동행카드 신청서"
+   ],
+   "office": "관할 주소지 동 주민센터",
+   "apply_method": "카드신청: 관할 주소지 동 주민센터 방문신청 또는 온라인 신청. 카드등록: 동행카드 홈페이지(https://sb.purmee.kr)에서 카드등록(인증할 휴대폰이 없는 경우 관할 주소지 동 주민센터 방문 후 등록)",
+   "period_type": "fixed"
+  },
+  {
+   "serv_id": "WLF00002335",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002336",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문 신청 (참전유공자의 유족이 1년 이내 신청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002337",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "관할 동주민센터",
+   "apply_method": "방문, 인터넷",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002338",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002339",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "한부모가족(청소년한부모가족)으로 결정된 가구에게 별도 신청절차 없이 지급",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002340",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지(주민등록지) 동 주민센터",
+   "apply_method": "방문, 인터넷, 모바일 (거주지 주민센터 방문 신청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002341",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002364",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "서울특별시 용산구 장애인휠체어 등 수리 지원 신청 서식"
+   ],
+   "office": "중증장애인독립생활연대(사업 수행 기관)",
+   "apply_method": "방문, 전화. 수리 신청 접수[중증장애인독립생활연대(사업 수행 기관)] 후 수리(중증장애인독립생활연대)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002365",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002393",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "각 동주민센터",
+   "apply_method": "지원가능 대상자에게 안내문 발송 후 각 동주민센터 방문 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002396",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002417",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "지원 신청서",
+    "장기요양등급 외 판정 및 탈락을 증명할 수 있는 서류 또는 의사 소견서(진단서) (장기요양등급 외 판정 또는 탈락을 증명하거나 거동불편 의사소견으로 보행기 필요성을 인정받는 경우)"
+   ],
+   "office": "해당 동주민센터",
+   "apply_method": "방문 신청 (해당 동주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002418",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "산모신생아건강관리지원서비스 이용확인서",
+    "서비스 제공기록지",
+    "본인부담금 납부 영수증",
+    "주민등록등본",
+    "신분증",
+    "통장사본"
+   ],
+   "office": "은평구보건소 건강증진과(5층)",
+   "apply_method": "방문, E-mail",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002419",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "개인정보제공동의서"
+   ],
+   "office": "거주지 관할 읍면동 주민센터",
+   "apply_method": "방문. 대상자 신규 등록 가능 시 신청서 및 개인정보제공동의서 작성 후 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002421",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "관할 동 주민센터",
+   "apply_method": "방문 (관할 동 주민센터 내방)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002441",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "입양사실확인서",
+    "통장사본"
+   ],
+   "office": "강동구청 아동청소년과",
+   "apply_method": "방문 (구청으로 직접 신청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002442",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "동주민센터 방문 신청. 지원은 방송사로 지원신청 대상자 정보를 제공하고 계약을 체결하는 방식",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002443",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "읍면동 주민센터",
+   "apply_method": "방문 신청: 읍면동 주민센터에 저소득 취약계층 국민건강보험료 지원신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002444",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 신청: 동주민센터에서 출생신고와 함께 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002445",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가유공(유족)자증",
+    "통장사본"
+   ],
+   "office": "거주지 동 주민센터",
+   "apply_method": "방문 신청: 거주지 동 주민센터에 신청. 지급개시일은 신청한 달부터이며, 개인별 신청 계좌로 입금",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002455",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동대문구 관내 동사무소",
+   "apply_method": "방문: 관내 동사무소에 출생신고 후 출생신고 즉시 보육아동 담당자가 유아용품 지급, 동 담당자가 출산축하 유아용품 지급대장에 수령자 기재",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002470",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002471",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "전입지 임차계약서 사본",
+    "이사비용 증빙서류 사본(이사업체명 필수)"
+   ],
+   "office": "전입신고한 동주민센터",
+   "apply_method": "방문 신청 (이사 완료 후 전입신고한 동주민센터)",
+   "period_type": "quota"
+  },
+  {
+   "serv_id": "WLF00002473",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002474",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 64,
+   "deadline": null,
+   "docs": null,
+   "office": "관할 동주민센터",
+   "apply_method": "관할 동주민센터에 방문 신청. 서비스 이용은 활동지원 국고보조 및 시비추가 소진 후 사용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002480",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "동주민센터 사례회의 등 자체 절차에 의해 선정",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002496",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "국가유공자증 사본",
+    "통장사본"
+   ],
+   "office": "동주민센터",
+   "apply_method": "동주민센터 방문 신청, 신청서 자필 작성 제출. 지급개시일은 신청 익월 말 지급(신청월 소급 지급), 수급자 은행계좌로 개별 입금",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002497",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "산모 신분증",
+    "산모 명의의 통장사본",
+    "서비스제공기관 이용계약서",
+    "비용납부영수증",
+    "서비스 제공기록지",
+    "산모신생액 건강관리 지원 서비스 본인부담금 결제 증빙자료"
+   ],
+   "office": "강남구 보건소 1층 의료비지원실",
+   "apply_method": "서비스 이용 후 증빙서류를 지참하여 보건소 1층 의료비지원실 방문 또는 정부24(온라인) 신청 (우편, 인터넷 접수도 안내됨)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002498",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "저소득 건강보험료 지원신청서",
+    "건강보험료 납부고지서 또는 영수증"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문 - 동주민센터로 저소득주민 국민건강보험료 지원 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002506",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002509",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문: 신청서류 등을 구비하여 동주민센터에 신청서 제출 → 동에서 현지사실조사 후 구에서 효도수당 지급",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002510",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "위문금: 지급 월 강서구 거주 보훈대상자 또는 보훈단체장 추천으로 지급(계좌이체) / 사망위로금: 유족의 신청으로 지급(계좌이체) / 보훈예우수당: 개별 신청(동주민센터 방문), 계좌이체 지급",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002511",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002512",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002514",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가유공자(유족)를 확인할 수 있는 서류 사본",
+    "통장사본",
+    "사망위로금지급신청서 (사망위로금 신청 시)",
+    "사망자의 사망확인 서류 및 신청인의 관계를 확인할 수 있는 서류 (사망위로금 신청 시)",
+    "참전유공자증 사본 (사망위로금 신청 시)",
+    "통장사본 (사망위로금 신청 시)"
+   ],
+   "office": "주소지 주민센터, 성북구청 복지정책과 (성북구 보문로 168)",
+   "apply_method": "1) 방문신청: 주소지 주민센터 2) 우편신청 3) 팩스신청: 02-2241-6526, 6527 (발송 후 02-2241-2306으로 전화 확인 필수) 4) 사망위로금: 주민센터나 구청에 방문하여 사망위로금지급신청서 작성",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002515",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002517",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 신청(동주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002518",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "중구 서소문로6길 16 구립중림어르신데이케어센터",
+   "apply_method": "방문, 전화. 장기요양보험신청(국민건강보험공단) → 등급판정 → 시설에 이용문의",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002519",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002536",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "동주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002538",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002560",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가보훈대상자 사망위로금 지급신청서"
+   ],
+   "office": "동사무소 또는 구청",
+   "apply_method": "방문 (동사무소 또는 구청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002602",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002603",
+   "source": "local",
+   "min_age": 50,
+   "max_age": 65,
+   "deadline": null,
+   "docs": null,
+   "office": "50+행복아카데미: 마포시니어클럽",
+   "apply_method": "방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002607",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인 본인 신분증",
+    "신청서(서식1호)",
+    "출생사실이 기록된 주민등록등본",
+    "장애인 본인 명의 통장사본",
+    "대리인 신분증 (대리인이 신청하는 경우)",
+    "관련 증빙서류 (장애인 본인 명의 계좌가 없거나 압류되어 배우자, 직계혈족, 형제·자매 명의 계좌로 입금받는 경우)"
+   ],
+   "office": "장애인의 주민등록지를 관할하는 동주민센터",
+   "apply_method": "장애인 본인 또는 그 가족(대리신청인 범위: 장애인의 배우자, 직계혈족, 형제·자매)이 동주민센터 방문 신청 (우편 및 팩스신청 불가)",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002614",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가유공자(유족)증",
+    "통장사본",
+    "마포구 보훈수당 신청서"
+   ],
+   "office": "관할 동 주민센터",
+   "apply_method": "방문 신청 (관할 동 주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002615",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "마포구 동주민센터",
+   "apply_method": "방문 신청: 마포구 동주민센터에서 신청 및 접수하면 장애인활동지원 수급자격심의위원회에서 지원 결정 후 시군구에서 통보",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002617",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울주거포털(온라인), 협약은행(국민, 신한, 하나은행)",
+   "apply_method": "인터넷, 모바일. 은행에서 대출한도 조회 등 사전상담 - 전세계약 - 서울주거포털에서 추천서 발급신청 - 서울시 신청서 검토 및 추천서 발급 - 은행에 대출신청 - 협약은행 대출심사 - 전세자금보증(HF) - 대출금 입금(협약은행)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002618",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "저소득주민 국민건강보험료 등 지원 신청서",
+    "고지서 사본 또는 납부확인서",
+    "신분증 사본"
+   ],
+   "office": "거주지 동주민센터",
+   "apply_method": "방문 - 거주지 동주민센터로 저소득주민 국민건강보험료 지원 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002619",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002623",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 (동주민센터 신청 ⇒ 구청 조사 및 결정 ⇒ 구청 결과통보 ⇒ 제공기관 서비스 제공 ⇒ 사회보장정보원 결제 및 지급)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002625",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 신청 (동 주민센터에 신청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002626",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신생아 건강보험 신청서"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문 - 출생신고 시 동주민센터에서 신생아 건강보험 신청서 작성 및 접수",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002627",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002628",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "통장사본",
+    "육아용품 영수증 (동작출산축하용품 신청 시)"
+   ],
+   "office": "동작구 동주민센터",
+   "apply_method": "동주민센터 방문신청 (인터넷 신청 가능)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002637",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "서울주거포털(온라인)",
+   "apply_method": "서울주거포털에 온라인 신청(인터넷)",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002651",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 관악구 각 동 주민센터 및 관악구청 생활복지과",
+   "apply_method": "별도 신청 없이 각 동에서 지급기준일 기준 지급조서를 작성하여 구청에 제출하고, 지급 예정일에 수급자 계좌로 무통장 입금",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002652",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "사망자의 국가유공자증(유족증) 사본",
+    "사망자의 사망진단서(또는 사망 말소자 등본)",
+    "유족 통장사본",
+    "유족 신분증",
+    "대리인 신분증 (대리인 신청 시)",
+    "위임장 (대리인 신청 시)"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문 신청(동주민센터에서 신청서류 안내 및 접수, 대리인 신청 가능). 구청에서 신청 15일 이내 신청자(사망자 가족) 통장으로 입금",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002663",
+   "source": "local",
+   "min_age": 90,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "관할 동 주민센터(동장)",
+   "apply_method": "방문 - 대상자가 신청서를 지급기준일 1개월 전까지 관할 동장에게 제출하면, 동장이 수급자격 여부를 확인하여 매월 15일까지 구청에 제출",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002664",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동주민센터",
+   "apply_method": "방문 - 거주지 동주민센터에 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002665",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터, 담당부서",
+   "apply_method": "방문, 전화. 동주민센터와 담당부서에서 대상자를 조회하여 지원함(명절 전 위문대상자 파악 후 지급).",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002666",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문: 동주민센터에서 사회복지서비스 및 급여제공(차상위계층) 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002667",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 동 주민센터",
+   "apply_method": "주소지 동 주민센터 방문 신청 또는 행복출산 온라인 신청. 매월 1일부터 말일까지 신청분을 익월 15일에 신청인 계좌이체로 지급",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002700",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "사랑의 음료 신청서"
+   ],
+   "office": null,
+   "apply_method": "방문, 전화. 대상자 이용 신청 시 신청서를 작성하여 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002714",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "별도 신청 없이 국민건강보험공단 마포지사에서 지역가입자 중 조건에 해당하는 명단을 통보받아 마포지사 계좌로 입금",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002715",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동주민센터",
+   "apply_method": "방문: 거주지 동주민센터에서 상담 및 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002719",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문, 전화. 동주민센터에서 수리 신청 및 접수 후 수리지정업체가 출장방문하여 보조기구 수리(처리기간 5일 이내), 월별 수리비 청구 및 정산(수리지정업체->구청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002720",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002721",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "건강보험료 납입 고지서 또는 건강보험료 납입 통장 거래내역"
+   ],
+   "office": "동주민센터",
+   "apply_method": "동주민센터 방문 신청(신분증, 건강보험료 납입 고지서 또는 건강보험료 납입한 통장 거래내역 지참)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002722",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동주민센터",
+   "apply_method": "방문 신청 (거주지 동주민센터)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002729",
+   "source": "local",
+   "min_age": 18,
+   "max_age": 34,
+   "deadline": "2026-06-19",
+   "docs": null,
+   "office": "서울시 복지재단 자산형성지원사업 홈페이지 http://account.welfare.seoul.kr",
+   "apply_method": "온라인 접수(PC에서만 신청 가능, 모바일 및 방문 신청 안됨). 공고문을 참조하여 서울시 희망두배 청년통장과 동시 신청",
+   "period_type": "fixed"
+  },
+  {
+   "serv_id": "WLF00002752",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002753",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "주민센터",
+   "apply_method": "방문: 주민센터를 방문하여 신청서 작성 후, 신청서류를 지정업체에 제출하여 수리서비스 이용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002754",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 - 동주민센터를 통한 신청, 대기자로 관리 후 선정",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002757",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "사회복지서비스 및 급여제공(변경) 신청서",
+    "국민건강보험료 고지서"
+   ],
+   "office": "관할 동주민센터",
+   "apply_method": "방문 신청 (관할 동주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002764",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "통장 사본",
+    "입학관련서류"
+   ],
+   "office": "거주지 동 주민센터",
+   "apply_method": "방문: 대상아동의 부모가 거주지 동 주민센터에 직접 신청 → 동 주민센터에서 자격요건 확인 → 구청에서 신청계좌로 입학축하금 지급",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002765",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "수급자증명서 (기초생활수급자인 경우)",
+    "차상위계층 확인서 (차상위계층인 경우)"
+   ],
+   "office": "동대문구보건소 예방접종실",
+   "apply_method": "신분증 및 구비서류를 지참하여 동대문구보건소 예방접종실 방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002766",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "저소득주민 건강보험료 지원 신청서",
+    "건강보험료 고지서"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문: 동주민센터에 저소득주민 건강보험료 지원 신청서 제출 (처리절차: 동주민센터 수시신청 → 사회복지과 매월 말 신규명단 → 국민건강보험공단 송부)",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002767",
+   "source": "local",
+   "min_age": 70,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 신청 (동 주민센터). 처리절차: 동 주민센터 신청 → 사회복지과 보고 → 케이블사로 명단 통보 → 대상자 가구에 방문 약속 후 설치(케이블사)",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002774",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "보훈예우수당 신청서",
+    "유공자(유족)증",
+    "통장"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문 신청: 동주민센터에 보훈예우수당 신청서, 유공자(유족)증, 통장 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002778",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 65,
+   "deadline": null,
+   "docs": null,
+   "office": "급여 대상 장애인의 주민등록상 주소지 주민센터",
+   "apply_method": "방문 신청. 신청권자는 본인, 가족이나 친족, 그 밖의 대리인",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002780",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "읍/면/동 주민센터",
+   "apply_method": "방문 신청: 읍/면/동 주민센터에서 보훈예우수당 및 사망위로금 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002794",
+   "source": "local",
+   "min_age": null,
+   "max_age": 18,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002795",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002796",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 (동주민센터를 통해 신청, 구에서 심사기준표에 의거 선정)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002797",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "입양사실확인서",
+    "예금통장 사본",
+    "장애등급확인서 (장애아동인 경우)"
+   ],
+   "office": "금천구 교육지원과",
+   "apply_method": "방문 신청 (금천구 교육지원과) > 검토 > 15일 이내 계좌입금",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002813",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 양천구청 생활보장과",
+   "apply_method": "방문, 전화",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002815",
+   "source": "local",
+   "min_age": 3,
+   "max_age": 5,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002816",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002817",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002818",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "금천구청 민원여권과, 동주민센터",
+   "apply_method": "금천구청 민원여권과 또는 동주민센터를 방문하여 수어통역영상전화기 사용 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002819",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "출생축하금 신청서"
+   ],
+   "office": "거주지 동 주민센터, 정부24",
+   "apply_method": "거주지 동 주민센터 방문 또는 정부24(출산 관련 서비스 통합처리 신청(행복출산)) 인터넷 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00002820",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "개인별 통장에 무통장입금으로 지급",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002821",
+   "source": "local",
+   "min_age": 70,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "동 주민센터",
+   "apply_method": "동 주민센터에 방문 신청하여 신청서 작성",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002822",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 접수",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002823",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문 접수",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00002826",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002828",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "강북장애인단체총연합회",
+   "apply_method": "방문, 전화. 장애인단체총연합회에 일괄배부 후 연합회 소속 분회에서 대상자에게 지급",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002829",
+   "source": "local",
+   "min_age": 19,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "방문 (동주민센터 신청, 지원기준 충족여부 판단 후 결정)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00002838",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "동주민센터",
+   "apply_method": "방문: 동주민센터에 신청서 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003009",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문 / 서비스 이용 신청 시 본인부담금 지원 동시 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003114",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "효행장려금 지급신청서",
+    "신청인 예금통장 사본"
+   ],
+   "office": "주소지 동주민센터",
+   "apply_method": "방문 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003115",
+   "source": "local",
+   "min_age": 9,
+   "max_age": 18,
+   "deadline": null,
+   "docs": null,
+   "office": "강동구청소년지원센터(꿈드림)",
+   "apply_method": "강동구청소년지원센터(꿈드림) 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003810",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인신문 구독신청서"
+   ],
+   "office": "동 주민센터",
+   "apply_method": "방문: 동 주민센터에 장애인신문 구독신청서 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003884",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주민등록지 관할 구청 및 동주민센터",
+   "apply_method": "직권지급, 누락 시 주민등록지 관할 구청 및 동주민센터에 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003905",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "주민등록등본",
+    "학교 재적증명서 또는 재학증명서",
+    "입학준비금 신청서"
+   ],
+   "office": "우편접수: 강북구 도봉로 323, 10층 교육지원과 입학준비금 담당자 앞(접수 후 확인 전화 필수). 방문접수: 강북구 한천로 323, 10층 교육지원과 사무실(09:00~18:00, 토·일·공휴일 및 점심시간 12:00~13:00 접수 불가)",
+   "apply_method": "관내 학생: 중·고등학교는 https://start.sen.go.kr, 초등학교는 https://on.zeropaypoint.or.kr 접속하여 신청(신청기간 내 접속 가능). 관외 학교 입학생: 우편접수 또는 방문접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003906",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가유공자증 또는 유족증",
+    "본인 통장사본"
+   ],
+   "office": "관할 동주민센터",
+   "apply_method": "방문 신청: 관할 동주민센터에 신청 (신청서는 주민센터에 비치)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003923",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "성동구청 홈페이지(신속예약 - 생활서비스 내 임산부 가사돌봄)",
+   "apply_method": "온라인 신청(성동구청 홈페이지 - 신속예약 - 생활서비스 내 임산부 가사돌봄). 절차: 1. 온라인 신청(신청자) 2. 자격 검토 및 승인(동주민센터-구청) 3. 온라인 서비스 예약(자격 승인자) 4. 서비스 이용 연계(서비스 제공 업체)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003933",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터, 서초구청 여성보육과",
+   "apply_method": "서초구 홈페이지(인터넷) 신청, 동주민센터 또는 서초구청 여성보육과 내방 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00003949",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주민센터",
+   "apply_method": "주민센터 방문 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004025",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "국가유공자증 사본",
+    "통장사본"
+   ],
+   "office": "거주지 동주민센터 또는 구청",
+   "apply_method": "거주지 동주민센터 또는 구청 방문신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004029",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "출산 서비스 통합처리 신청서",
+    "신분증",
+    "주민등록등본",
+    "출생아의 부 또는 모의 통장사본",
+    "증빙서류 (국외 출산 예외(다문화가족 또는 직장·학업 등 불가피한 사유로 국외 출산)에 해당하는 경우 최초 귀국일부터 1년 이내 추가 제출)"
+   ],
+   "office": "주소지 관할 동 주민센터",
+   "apply_method": "방문, 인터넷 (주소지 관할 동 주민센터에 방문 신청)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00004044",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "동주민센터 방문신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004096",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청 불필요, 해당 전월 보훈예우수당·참전명예수당 수급자 전체 지급)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004149",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004158",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "대상포진예방접종 비용신청서",
+    "기초생활수급자 증명서",
+    "신분증"
+   ],
+   "office": "거주 동 주민센터, 서대문구 보건소",
+   "apply_method": "거주 동 주민센터에 신청하고 대상포진예방접종 비용신청서를 작성한 후, 동별 지정일에 대상자가 직접 보건소에 방문하여 예방접종 실시",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004197",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 서대문구 교육문화체육국 아동청소년과 아동자립지원팀",
+   "apply_method": "방문 신청(해당 사업 담당자에게 전화로 안내 받은 후 방문 신청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004254",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서초구청 또는 동주민센터",
+   "apply_method": "서초구청 또는 동주민센터 방문 신청. 신청 후 소득인정액 조사, 재산 등 개인정보 이용 동의, 가정방문 진행",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004256",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "유공자증",
+    "유족증",
+    "통장사본"
+   ],
+   "office": "관할 동주민센터",
+   "apply_method": "유공자증, 유족증, 통장사본 등을 구비하여 관할 동주민센터에 방문하여 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004265",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "동주민센터에서 대상자 명단을 제출·추천",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004266",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "수당지급신청서",
+    "국가보훈등록(유족)증",
+    "통장사본",
+    "사망위로금 신청서 (사망위로금 신청 시)",
+    "사망진단서 (사망위로금 신청 시)",
+    "신청인의 가족관계증명서 (사망위로금 신청 시)",
+    "신청인의 신분증 사본 (사망위로금 신청 시)"
+   ],
+   "office": "중구청 또는 거주지 동주민센터",
+   "apply_method": "방문 신청 (구청 또는 거주지 동주민센터)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004277",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "구로구청",
+   "apply_method": "방문 신청 (신청인이 구청에 신청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004281",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "입양아동 양육보조금 등 신청서",
+    "입양사실 확인서",
+    "통장사본"
+   ],
+   "office": "서울특별시 서대문구 아동청소년과 아동자립지원팀",
+   "apply_method": "방문 (주민등록지 기준 시·군·구청 방문)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00004357",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가유공자 보훈예우수당 지급신청서"
+   ],
+   "office": "주소지 동주민센터",
+   "apply_method": "주소지(거주지) 동주민센터를 방문하여 신청서 작성 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004358",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "마포구 보건소",
+   "apply_method": "마포구 보건소에 임산부 등록 후 맘편한임신 통합제공서비스를 통한 온라인 및 방문접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004360",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "의사 소견서 (임신 16주 이후 유산, 사산한 경우)",
+    "확인서 (임신 16주 이후 유산, 사산한 경우)",
+    "출산 후 입원 확인서 (미숙아, 선천성이상아 출산 등으로 입원한 경우)"
+   ],
+   "office": "서울특별시 용산구 보건소 건강관리과",
+   "apply_method": "방문, 인터넷",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00004370",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "강북구수어통역센터(강북구 도봉로 388 테마빌딩 5층)",
+   "apply_method": "전화 또는 방문 (별도의 신청서가 없어 계획서 첨부)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004543",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문, 우편, 인터넷 / 직접신청, 병의원이 보건소로 직접청구",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004588",
+   "source": "local",
+   "min_age": 60,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "복지관 (서울특별시 마포구)",
+   "apply_method": "방문, 전화. 복지관에 방문신청 - 복지관에서 대상자 방문 조사 - 구청 신청 - 구청 승인 - 대상자 복지관 이용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004602",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서초1인가구지원센터",
+   "apply_method": "방문, 인터넷 (건강·안전·생활·관계·특화사업은 서초1인가구지원센터 홈페이지 참고 : http://www.seochosingle.net)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004607",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004629",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004688",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 강동구 교육지원과 (서울소재 학교 입학생은 서울시교육청 홈페이지/입학학교)",
+   "apply_method": "인터넷 신청. 1. 서울소재 학교 1학년 신입생: 서울시교육청 홈페이지(https://start.sen.go.kr/)에서 신청, 신청방법은 입학학교에 문의. 2. 서울 외 타지역 소재 학교 1학년 신입생: 강동구 홈페이지(https://www.gangdong.go.kr/web/newportal/schooluniform/list)에서 신청, 신청방법은 구청 교육지원과에 문의",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004703",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "미혼모·부 아동양육비 등 신청서"
+   ],
+   "office": "거주지 관할 동주민센터",
+   "apply_method": "거주지 관할 동주민센터 방문접수",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00004719",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": "2022-04-08",
+   "docs": null,
+   "office": "거주지 동 주민센터 (1차 선정가구 서류 제출)",
+   "apply_method": "온라인 신청 원칙(방문, 전화, 인터넷). 1차 5,000가구 무작위 선정 후 1차 선정가구에 한하여 거주지 동 주민센터 방문 서류 제출",
+   "period_type": "fixed"
+  },
+  {
+   "serv_id": "WLF00004726",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주민등록주소지 동주민센터",
+   "apply_method": "주민등록주소지 동주민센터 내방 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004778",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": null,
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004779",
+   "source": "local",
+   "min_age": 11,
+   "max_age": 18,
+   "deadline": null,
+   "docs": null,
+   "office": "주민등록지 관할 동 주민센터",
+   "apply_method": "주민등록지 관할 동 주민센터 방문신청 또는 성동구 홈페이지 온라인 신청 후 동주민센터에서 카드 수령",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004791",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 서초구 밝은미래국 아동청년과",
+   "apply_method": "우편, 인터넷",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004832",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "입학준비금 지원 신청서",
+    "학교재학증명서",
+    "주민등록등본"
+   ],
+   "office": "서울특별시 종로구 복지교육국 아동청소년교육과 (종로구청)",
+   "apply_method": "방문, 우편, E-mail",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004850",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "임신증빙서류(임신부수첩, 임신출산진료비 신청서 등)",
+    "증빙서류 (공휴일 이용 예외 대상인 출산일 40일 이내 임신부 및 직장인 임신부의 경우 증빙서류 지참)"
+   ],
+   "office": "관할 동주민센터, 보건소",
+   "apply_method": "관할 동주민센터, 보건소 본인 및 대리인 방문신청 또는 온라인 내편중구 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004854",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "해당 읍·면·동 주민센터",
+   "apply_method": "방문신청(해당 읍·면·동 주민센터 방문)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00004868",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "동작구청 교육정책과 입학준비금 담당자 (타 시도 소재 학교 입학생), 서울시교육청 입학준비금 신청 홈페이지 https://start.sen.go.kr (동작구 소재 학교 입학생)",
+   "apply_method": "동작구 소재 학교 1학년 입학생: 서울시교육청 입학준비금 신청 홈페이지(https://start.sen.go.kr)에서 온라인 신청, 입학학교에 신청 문의. 서울시 외 타 시도 소재 학교 1학년 입학생: 동작구청 교육정책과 입학준비금 담당자에게 신청서 제출(방문)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005003",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005012",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문 신청: 신청서 작성 후 돌봄 필요 여부를 결정하여 결정",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005014",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문, 전화 (필요 대상자 지원)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005028",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "주민등록등본(신청일 기준 30일 이내 발급분)",
+    "임대차계약서 사본",
+    "자립준비청년 보호종료확인서 (해당자에 한함)"
+   ],
+   "office": "동주민센터",
+   "apply_method": "이메일(jiyune7@mail.jongno.go.kr) 및 동주민센터 방문 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005058",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "영구차비용 지원 신청서",
+    "영구차 사용 증빙 서류(현금영수증, 카드영수증, 세금계산서 중 1)",
+    "간이영수증 (영구차 사용 증빙 서류 제출이 부득이 어려운 경우)",
+    "화장증명서 (영구차 사용 증빙 서류 제출이 부득이 어려운 경우 간이영수증과 함께 제출)"
+   ],
+   "office": "동주민센터",
+   "apply_method": "동주민센터에 방문 신청 → 동에서 생활복지과로 지급신청 → 지급신청일로부터 15일 이내(공휴일 제외) 지급",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005075",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "임대차계약서 또는 사용대차확인서",
+    "이사비영수증",
+    "통장사본"
+   ],
+   "office": "관할 동주민센터",
+   "apply_method": "관할 동주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005093",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "보훈예우수당 신청서"
+   ],
+   "office": "관할 동주민센터",
+   "apply_method": "관할 동주민센터에 방문 또는 E-mail로 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005095",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "국가보훈대상자 사망위로금 지급신청서"
+   ],
+   "office": "관할주민센터",
+   "apply_method": "관할주민센터 내방하여 신청 (방문, E-mail)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005096",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "중랑구 보훈예우수당 신청서"
+   ],
+   "office": "관할 주민센터",
+   "apply_method": "관할 주민센터 방문 및 이메일 신청 (대상자는 보훈처 협조로 직권 지급 예정)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005097",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "몽땅정보 만능키 홈페이지",
+   "apply_method": "인터넷 신청: 몽땅정보 만능키 홈페이지를 통해 신청 및 돌봄활동 확인 후 비용 지급",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005101",
+   "source": "local",
+   "min_age": 18,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005168",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "관할 동 주민센터",
+   "apply_method": "방문신청: 관할 동 주민센터 신청(출생신고 시 동시 신청) / 온라인신청: 정부24 '보조금24' 신청(온라인 출생신고일 경우 출생신고 완료 후 가능)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005172",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "개인정보동의서"
+   ],
+   "office": "이메일 ddm2030@ddm.go.kr",
+   "apply_method": "자격증 시험 응시 후 동대문구 홈페이지(구정소식, 고시/공고) 게시글을 참고하여 신청서 및 필수 제출 서류를 이메일(ddm2030@ddm.go.kr)로 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005191",
+   "source": "local",
+   "min_age": 4,
+   "max_age": 12,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문, 전화, 인터넷. 회원가입 후 예치금 입금(홈페이지, 전화, 방문 회원가입 가능) → 보호자가 직접 전화로 서비스 신청 → 아동 픽업 → 병의원 동행 → 귀가 조치 → 결과 전달 → 부모가 센터로 확인 메시지 전송",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005198",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울: 재학 중인 대안교육기관 / 타 시도: 서울특별시교육청 (이메일 접수)",
+   "apply_method": "서울: 재학 중인 대안교육기관으로 신청 서류 제출 / 타 시도: 신청인이 교육청 이메일로 서류 제출",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005234",
+   "source": "local",
+   "min_age": null,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "성동구청 홈페이지 온라인 접수 / 서울특별시 성동구 아동청년과",
+   "apply_method": "성동구청 홈페이지 온라인 접수(구비서류 첨부). 아동청년과에서 온라인 접수자 확인, 지원대상자 선정 및 통보, 지원금 계좌이체",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005240",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "교육비 지원 신청서",
+    "소득재산신고서",
+    "금융정보 등 제공동의서"
+   ],
+   "office": "거주지 읍면동 주민센터",
+   "apply_method": "거주지 읍면동 주민센터 방문: 교육비 지원 신청서, 소득재산신고서, 금융정보 등 제공동의서 작성 및 구비서류 제출 / 온라인 신청: 복지로(www.bokjiro.go.kr), 교육비 원클릭(oneclick.neis.go.kr)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005244",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "인터넷이나 모바일을 통해 학부모가 신청. 신청사이트: (초) https://on.zeropaypoint.or.kr, (중·고) https://start.sen.go.kr (방문, 모바일앱)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005246",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "성동구청 홈페이지, 관할 주민센터",
+   "apply_method": "성동구청 홈페이지(인터넷), 관할 주민센터 방문, 이메일 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005247",
+   "source": "local",
+   "min_age": 18,
+   "max_age": 34,
+   "deadline": null,
+   "docs": null,
+   "office": "서울시 자산형성지원사업 홈페이지: https://account.welfare.seoul.kr",
+   "apply_method": "온라인 신청(PC만 신청 가능)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005256",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "인터넷(서울특별시교육청 홈페이지 공고 참조하여 신청 기한 내 서류 접수)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005267",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "교육비 지원 신청서",
+    "소득재산 신고서",
+    "금융정보 등 제공동의서"
+   ],
+   "office": "거주지 읍면동 주민센터",
+   "apply_method": "거주지 읍면동 주민센터 방문: 교육비 지원 신청서, 소득재산 신고서, 금융정보 등 제공동의서 및 구비서류 제출 / 온라인 신청: 복지로(www.bokjiro.go.kr), 교육비 원클릭(oneclick.neis.go.kr)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005279",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "서울특별시교육청보건안전진흥원",
+   "apply_method": "방문, 우편, E-mail",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005367",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "각 동 주민센터",
+   "apply_method": "방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005401",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "수급자격을 확인할 수 있는 서류"
+   ],
+   "office": "서울특별시 광진구 행정국 체육진흥과",
+   "apply_method": "QR코드를 통한 네이버폼 신청 및 증빙서류 제출(인터넷, E-mail). 신분증 및 수급자격을 확인할 수 있는 서류를 이메일 또는 인터넷 신청 시스템으로 담당자에게 제출. 체육진흥과에서 증빙서류 확인 후 신청자에게 고유번호(입장권) 송부.",
+   "period_type": "quota"
+  },
+  {
+   "serv_id": "WLF00005407",
+   "source": "local",
+   "min_age": 6,
+   "max_age": 64,
+   "deadline": null,
+   "docs": null,
+   "office": "거주하고 있는 자치구 장애인가족지원센터",
+   "apply_method": "방문, 전화, 인터넷, E-mail. 거주하고 있는 자치구 장애인가족지원센터 전화 상담→서비스 대상자 여부 결정→서비스 신청→서비스 이용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005408",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "강북구 일자리청년과",
+   "apply_method": "담당자 전자우편(E-mail) 또는 강북구 일자리청년과 방문접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005409",
+   "source": "local",
+   "min_age": 6,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인 버스요금 지원신청서 및 개인정보 동의서"
+   ],
+   "office": "서울시 동 주민센터",
+   "apply_method": "서울시 동 주민센터 방문 신청 또는 서울시 버스요금지원시스템 온라인 신청(단, 본인 또는 법정대리인만 가능)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005410",
+   "source": "local",
+   "min_age": 6,
+   "max_age": 24,
+   "deadline": null,
+   "docs": [
+    "소득관련 증빙서류 (중위소득 50~80% 이하로 신청하는 경우)",
+    "최종학력증명서(정부24 발급) 또는 기관장 확인서(비인가 대안교육기관 및 학교밖청소년 지원기관) (학교밖 청소년인 경우)",
+    "가족관계증명서(정부24 발급) 또는 기관장 확인서(다문화가족지원센터 등) (다문화가족인 경우)",
+    "북한이탈주민등록확인서(정부24 발급) 또는 기관장 확인서(북한이탈주민지원센터) (북한이탈주민인 경우)",
+    "가족관계증명서 (북한이탈주민 자녀인 경우 추가 제출)",
+    "가족관계증명서 (국가보훈대상자 손자녀인 경우 추가 제출)",
+    "소득확인증명서 (국가보훈대상자 손자녀인 경우 추가 제출)",
+    "기관장 확인서 (가정폭력피해자 보호시설, 꿀맛무지개교실, 아동보호시설, 지역아동센터 이용자, 한부모가족복지시설 입소자인 경우)",
+    "주민등록등본 (다자녀가구(3자녀 이상 가구, 중위소득 100% 이하)인 경우)",
+    "가족관계증명서 (다자녀가구(3자녀 이상 가구, 중위소득 100% 이하)인 경우)",
+    "소득증빙자료 (다자녀가구(3자녀 이상 가구, 중위소득 100% 이하)인 경우)"
+   ],
+   "office": "서울런(slearn.seoul.go.kr) 홈페이지 (온라인 접수)",
+   "apply_method": "서울런(slearn.seoul.go.kr) 홈페이지에서 온라인으로 신청. 자격 유형별로 실시간 온라인 자격검증(수급권자, 차상위계층, 법정 한부모, 독립유공자, 보훈대상자) 또는 증빙서류 업로드 후 담당자 승인(중위소득 50~80% 이하, 학교밖, 다문화가족, 북한이탈주민, 기관장 확인서 대상, 다자녀가구), 가족돌봄청년은 신청 후 서울시복지재단 검증 및 담당자 승인",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00005414",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "강남구청 주택과",
+   "apply_method": "강남구청 주택과 방문 및 우편 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005435",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005441",
+   "source": "local",
+   "min_age": 0,
+   "max_age": 6,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "우리동네 키움포털(https://icare.seoul.go.kr/icare/index.do)에서 온라인 예약 후 예약일시에 방문하여 이용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005456",
+   "source": "local",
+   "min_age": 0,
+   "max_age": 5,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문 신청, 국민행복카드 결제 지원",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005460",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005469",
+   "source": "local",
+   "min_age": 100,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "신분증",
+    "통장사본",
+    "위임장 (대리인이 신청하는 경우)"
+   ],
+   "office": null,
+   "apply_method": "방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005489",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "강서구 자립준비청년 플러스 자립수당 신청서"
+   ],
+   "office": "대상자가 거주하는 동 주민센터",
+   "apply_method": "대상자가 거주하는 동 주민센터에 방문하여 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005503",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "구로구청 아동청소년과",
+   "apply_method": "방문: 입양부모가 구비서류를 지참하고 구로구청 아동청소년과에 내방하여 신청서 작성 후 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005531",
+   "source": "local",
+   "min_age": 18,
+   "max_age": 64,
+   "deadline": null,
+   "docs": null,
+   "office": "해당 읍면동 주민센터",
+   "apply_method": "해당 읍면동 주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005587",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "방문: 동 주민센터에서 출생신고 시 출산서비스 통합신청서 신청, 또는 정부24에서 도봉구 출생축하용품 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005612",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 45,
+   "deadline": null,
+   "docs": null,
+   "office": "도봉구청 홈페이지, 담당자 이메일",
+   "apply_method": "도봉구청 홈페이지 신청 후 담당자 이메일로 증빙서류 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005630",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "신청서",
+    "임신확인서(병의원 발급)",
+    "본인 통장사본",
+    "개인정보 수집 이용,제공 동의서",
+    "외국인등록사실증명서 (외국인의 경우 신분증 대신 제출)"
+   ],
+   "office": "관할 동주민센터 및 보건소",
+   "apply_method": "온라인 또는 방문신청. 온라인: 정부24(www.gov.kr)에서 '임신축하금' 검색 후 신청. 방문: 관할 동주민센터 및 보건소",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005633",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 서대문구 보건소 지역건강과",
+   "apply_method": "예약 홈페이지를 통한 온라인 접수. 다문화가구 등 인터넷 사용이 어려운 경우 방문접수 가능. 입소자 선정은 매월 15일 줌을 활용한 비대면 공개추첨제 (입소자 추첨비율: 취약계층 70%, 일반 구민 30%, 타구민은 공실 발생 시)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005645",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 관할 동주민센터",
+   "apply_method": "정부24 온라인신청 또는 주소지 관할 동주민센터 방문신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005646",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "가족관계증명서 (주민등록등본상 다자녀가구임이 확인불가할 시 추가 요청할 수 있음)"
+   ],
+   "office": "주소지 관할 동주민센터",
+   "apply_method": "정부24(보조금24) 온라인 신청 또는 주소지 관할 동주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005650",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": null,
+   "apply_method": "신청서 서식 작성 후 이메일 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005663",
+   "source": "local",
+   "min_age": 40,
+   "max_age": 64,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005706",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터",
+   "apply_method": "동주민센터 신청 (방문, 전화, 모바일앱)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005752",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005753",
+   "source": "local",
+   "min_age": 0,
+   "max_age": 9,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005849",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "서울맘케어(www.seoulmomcare)에서 온라인 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005864",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "고용보험 미적용자 출산급여 지급결정통지서(직인 포함)",
+    "가족관계증명서",
+    "대리수령 신청서 (압류방지계좌만 보유, 채무불이행으로 금전채권 압류 등으로 제3자 계좌로 지급받는 경우(구청 방문 제출))"
+   ],
+   "office": "온라인 https://umppa.seoul.go.kr",
+   "apply_method": "지원대상자 본인이 온라인(https://umppa.seoul.go.kr)으로만 신청 가능. 제3자 계좌 지급 시 온라인 신청 후 대리수령 신청서를 구청에 방문 제출",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005866",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "가족관계증명서 (행정정보공동이용으로 확인되지 않아 제출 요청 시 등 제출해야 하는 구비서류)",
+    "거주자의 사업소득 원천징수영수증 (소득 증빙 서류로 제출 시(사업장에서 발급, 직인날인))",
+    "거주자의 사업소득지급명세서 (소득 증빙 서류로 제출 시(사업장에서 발급, 직인날인))",
+    "간이지급명세서(거주자의 사업소득) (소득 증빙 서류로 제출 시(사업장에서 발급, 직인날인))",
+    "사용증명서(근로기준법 39조) (해당되는 경우)",
+    "노무제공자·예술인 표준계약서 (노무제공자·예술인 해당 시)",
+    "용역계약서 (해당되는 경우)",
+    "이체확인증 (해당되는 경우)",
+    "고용・산재보험 자격 이력 내역서 (노무제공자 및 예술인 해당 시)",
+    "대리수령 신청서 (압류방지계좌만 보유하거나 채무불이행 등으로 제3자 계좌로 지급받는 경우(구청 방문 제출))"
+   ],
+   "office": "온라인 https://umppa.seoul.go.kr (제3자 계좌 등록 시 거주 구청 방문)",
+   "apply_method": "온라인(https://umppa.seoul.go.kr)으로만 신청. 제3자 계좌 지급 시 온라인 신청 후 대리수령 신청서를 구청 방문 제출",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005874",
+   "source": "local",
+   "min_age": 60,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "접수기간 내 동 주민센터 방문 신청(인터넷 접수 미지원)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005877",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "신청자 주민등록상 주소지 관할 동주민센터",
+   "apply_method": "신청자 주민등록상 주소지 관할 동주민센터 방문 접수",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00005909",
+   "source": "local",
+   "min_age": 100,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장수축하물품 지급 신청서"
+   ],
+   "office": "주민등록상 주소지 관할 동 주민센터",
+   "apply_method": "장수어르신 또는 부양의무자가 주민등록상 주소지 관할 동 주민센터를 방문하여 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00005928",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "개인정보 수집·이용, 제공 동의서"
+   ],
+   "office": "동 주민센터",
+   "apply_method": "동 주민센터 방문하여 개인정보 수집·이용, 제공 동의서 작성 제출(에어컨 유형 및 제조사 등 정보 제공)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005938",
+   "source": "local",
+   "min_age": 18,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "의사소견서",
+    "영수증 원본",
+    "은행통장 (환자 본인 명의)",
+    "주민등록등본",
+    "암환자 가발구입비 지원신청서"
+   ],
+   "office": "서울특별시 용산구 보건소 보건의료과",
+   "apply_method": "환자 및 대리인이 방문 또는 유선으로 지원 대상 여부를 확인한 후, 대상자로 확인되면 제출서류를 지참하여 방문신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005963",
+   "source": "local",
+   "min_age": 13,
+   "max_age": 13,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "신분증",
+    "의료보험카드, 주민등록등본, 시설거주증명서 등 (청소년 본인 신청 시 신분증(청소년증, 여권, 장애인등록증)이 없는 경우)",
+    "관계 확인 서류(주민등록등본 또는 가족관계증명서) (부모 대리신청 시 행정정보 공동이용 미동의 경우)",
+    "대리자격 확인 서류(후견인증명서, 시설아동증빙서류, 가정위탁보호확인서 등) (후견인·법정대리인, 사회복지시설장, 위탁부모 등이 대리신청하는 경우)"
+   ],
+   "office": "거주지 동 주민센터",
+   "apply_method": "거주지 동 주민센터 방문신청 (청소년 본인 또는 법정대리인·부모·후견인·사회복지시설장·위탁부모 등 대리 방문신청). 상반기에 카드 발급 시 별도의 추가신청 없이 하반기까지 지원",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005982",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 동 주민센터",
+   "apply_method": "방문: 주소지 동 주민센터에 신청(기 구독 대상자는 별도신청 불필요)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005985",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": "대상자 거주지 주민센터",
+   "apply_method": "방문: 대상자 거주지 주민센터 신청 후 구와 공단에서 지원 대상 선정",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00005986",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006003",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "이사비 지원 신청서",
+    "임대차계약서 또는 사용대차 확인서",
+    "통장사본",
+    "이사비 지출 증빙서류"
+   ],
+   "office": "거주지 동주민센터",
+   "apply_method": "전입신고 60일 이내 거주지 동주민센터 방문신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006008",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 용산구 기획조정실 일자리정책담당관 (용산구청)",
+   "apply_method": "이메일 접수(ysyouth@yongsan.go.kr)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006014",
+   "source": "local",
+   "min_age": 6,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "홈페이지(greenbus.gangnam.go.kr) 또는 주민센터",
+   "apply_method": "홈페이지(greenbus.gangnam.go.kr) 회원가입 또는 주민센터 방문 신청. 분기별(3/6/9/12월) 교통카드 이용금액 신청 후 정산하여 계좌로 환급. 활용카드: 어르신(우대용 교통카드), 어린이·청소년(선후불 교통카드), 청년(기후동행카드, k패스가 아닌 그 외 교통카드)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006025",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울시 중소기업 워라밸 포인트제 홈페이지(https://pointseoul.or.kr/)",
+   "apply_method": "인터넷 신청: ① 서울시 중소기업 워라밸 포인트제 홈페이지(https://pointseoul.or.kr/)에서 온라인 신청 ② 서울시여성가족재단이 기업을 방문해 포인트를 산정하고 '서울시 워라밸 포인트 기업'으로 선정 ③ 육아휴직자 발생 시 동료가 대직업무 수행 ④ 고용24 홈페이지 등을 통해 고용노동부 '육아휴직 업무분담 지원금' 신청 후 결정통지서 수령 ⑤ 포인트제 홈페이지에서 '육아휴직 동료응원수당' 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006026",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울시 중소기업 워라밸 포인트제 홈페이지(https://pointseoul.or.kr/)",
+   "apply_method": "인터넷: 서울시 중소기업 워라밸 포인트제 홈페이지(https://pointseoul.or.kr/)에서 온라인 신청. 순서는 ①홈페이지 온라인 신청 ②서울시여성가족재단 기업 방문 후 포인트 산정 및 '서울시 워라밸 포인트 기업' 선정 ③소속 근로자 출산휴가 사용 ④고용24 홈페이지 등을 통해 고용노동부 '출산전후휴가 급여' 신청 및 결정통지서 수령 ⑤포인트제 홈페이지에서 '서울형 출산휴가급여 지원' 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006069",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 중구청 일자리경제과 청년지원팀",
+   "apply_method": "중구청 홈페이지에서 서류를 확인한 뒤 구비하여 이메일로 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006079",
+   "source": "local",
+   "min_age": 65,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 영등포구 보건소 생활건강과",
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006085",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "양천구청 홈페이지에서 온라인 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006109",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "강남구청 일자리정책과 (이메일 접수)",
+   "apply_method": "강남구청 홈페이지 고시공고 게시판(공고번호 2025-827호)에서 신청서식을 작성하고 첨부서류를 갖추어 이메일로 제출",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00006120",
+   "source": "local",
+   "min_age": 15,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "E-mail. 관내 장애인직업재활시설을 통해 근로훈련장애인으로 등록되어야 함",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006121",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "장애인증명서"
+   ],
+   "office": null,
+   "apply_method": "전화(미용실 사전 예약 후 미용서비스 이용). 매월초 동 담당자가 각 미용실을 방문하여 이전달 미용서비스 대장 및 명단을 확인하고 동별로 구청에 공문을 보내 각 미용실에 서비스 비용 지원",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006125",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": [
+    "응시료 지원신청서",
+    "개인정보 수집·이용 동의서"
+   ],
+   "office": "관악구청 홈페이지(온라인 접수)",
+   "apply_method": "관악구청 홈페이지 온라인 신청: 참여/예약(참여신청→행정접수) 접수하기 클릭, 홈페이지 내 신청서 및 개인정보 수집이용 동의서를 다운받아 회원가입 후 신청, 전체 증빙서류 첨부",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006128",
+   "source": "local",
+   "min_age": 9,
+   "max_age": 24,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006130",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "영등포구청 홈페이지(온라인 접수)",
+   "apply_method": "영등포구청 홈페이지를 통해 온라인 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006170",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "티머니 카드&페이 홈페이지",
+   "apply_method": "인터넷(티머니 카드&페이 홈페이지에서 자격요건 인증 후 선불 실물·선불 모바일은 충전, 후불은 사용)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006181",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "탄생육아 몽땅정보통(https://umppa.seoul.go.kr/)",
+   "apply_method": "인터넷 신청: 탄생육아 몽땅정보통(https://umppa.seoul.go.kr/) - 지원사업 신청 - 자녀출산 무주택가구 주거비 지원 - 신청하기",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006184",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 동 주민센터",
+   "apply_method": "거주지 동 주민센터 방문 또는 인터넷(정부24 행복출산) 신청. 수령은 동 주민센터 방문수령(온라인 신청도 방문수령 필요)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006186",
+   "source": "local",
+   "min_age": 2,
+   "max_age": 4,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터",
+   "apply_method": "정부24(원칙) 또는 동 주민센터 방문(예외)",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006194",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터, 수도사업소, 아리수사이버고객센터(https://i121.seoul.go.kr)",
+   "apply_method": "방문: 동주민센터·수도사업소 방문신청(자격확인 후 신청) 후 동주민센터 신청 건은 관할 수도사업소로 통보. 온라인: 아리수사이버고객센터(https://i121.seoul.go.kr) 민원신청 > 수도요금 감면 온라인 신청 > 비대면 자격확인",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006195",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동주민센터, 수도사업소, 아리수사이버고객센터(https://i121.seoul.go.kr)",
+   "apply_method": "방문 신청: 동주민센터·수도사업소 방문 신청(자격 확인 후 신청), 동주민센터 신청 건은 관할 수도사업소에 통보. 온라인 신청: 아리수사이버고객센터(https://i121.seoul.go.kr) 민원신청 > 수도요금 감면 온라인 신청 > 비대면 자격확인",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006199",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "자립준비청년 생활보조수당 지급 신청서"
+   ],
+   "office": "본인 주민등록상 주소지 동주민센터",
+   "apply_method": "(1) 방문신청 - 사전신청: 보호종료 예정자(본인 또는 아동복지시설 종사자, 가정위탁 대리인이 보호종료 전 30일 이내 본인 주민등록상 주소지 동주민센터에서 사전신청 가능) - 일반신청: 보호종료자(본인 또는 대리인이 본인 주민등록상 주소지 동주민센터 방문 신청) (2) 우편 또는 팩스 신청: 해외 유학 등 직접 방문 신청이 제한되는 경우 / 전화, E-mail 안내 있음",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006201",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "부동산 복지 통합 신청서",
+    "개인정보제공 동의서",
+    "임대차계약서",
+    "주민등록초본",
+    "대상자 증명서류",
+    "중개수수료 및 이사비 영수증",
+    "신분증",
+    "통장사본",
+    "증빙자료 (이사비 간이영수증 제출 시)"
+   ],
+   "office": "서울 중구 관내 동주민센터 및 중구청 부동산정보과",
+   "apply_method": "서울 중구 관내 동주민센터 및 중구청 부동산정보과 방문접수, 카카오톡 친구 '부응이' 통합복지신청 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006262",
+   "source": "local",
+   "min_age": 45,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "모바일앱: 손목닥터9888 -> 브레인핏45",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006325",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 강북구 기획경제국 일자리청년과",
+   "apply_method": "방문, E-mail, 팩스 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006326",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "난임 진단서",
+    "사전 선별지 결과",
+    "사전 필수 검사 결과지",
+    "재검사 결과지 (치료 전 검사 결과에서 이상 수치가 확인되었으나 재검사 결과가 정상 범위 내로 회복되었음을 증빙하는 경우(기존 검사 결과와 함께 제출))"
+   ],
+   "office": "은평구보건소 5층 예방관리과",
+   "apply_method": "온라인 신청: 유선전화 연락하여 담당자 이메일로 신청서류 및 구비서류 송부 / 방문신청: 은평구보건소 5층 예방관리과",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006327",
+   "source": "local",
+   "min_age": 100,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "위임장 (방문이 어려워 대리인이 신청하는 경우)",
+    "대리인 신분증 (방문이 어려워 대리인이 신청하는 경우)"
+   ],
+   "office": "해당 동주민센터",
+   "apply_method": "해당 동주민센터로 직접 방문하여 신청서 제출. 방문이 어려울 경우 대리인이 위임장과 신분증을 지참하여 신청 가능",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006328",
+   "source": "local",
+   "min_age": null,
+   "max_age": 19,
+   "deadline": null,
+   "docs": null,
+   "office": "동대문구 보건소 보건행정과 만성질환관리팀",
+   "apply_method": "환자가 처방전에 따라 건강보험공단에 등록된 의료기기 판매업소에서 등록된 당뇨관리기기를 구매한 후, 필요서류를 갖추어 본인 또는 보호자 직계존속(부모 또는 조부모)이 보건행정과 만성질환관리팀 방문 또는 등기우편으로 신청. 지원자격 및 제출서류 등 검토 후 지급.",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006329",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "고용산재보험료 부과내역",
+    "통장사본"
+   ],
+   "office": null,
+   "apply_method": "방문, E-mail, 팩스로 신청서 작성 후 증빙자료 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006351",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "전세사기 피해지원 신청 위임장 (대리 신청 시)"
+   ],
+   "office": "서울 강서구청 1층 부동산정보과",
+   "apply_method": "(오프라인) 서울 강서구청 1층 부동산정보과 방문 신청 (온라인) 정부24에서 강서구 전세피해지원금 검색 후 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006354",
+   "source": "local",
+   "min_age": 40,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 강북구 기획경제국 일자리청년과 (강북구청)",
+   "apply_method": "방문 또는 전용 E-mail(gbjob@gangbuk.go.kr)로 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006357",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "육아휴직 확인서",
+    "육아휴직급여 지급결정통지서"
+   ],
+   "office": "동 주민센터",
+   "apply_method": "온라인 신청(정부24) 또는 동 주민센터 방문 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006412",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서"
+   ],
+   "office": null,
+   "apply_method": "신청서와 구비서류를 지참하여 방문 또는 우편 신청 (E-mail 가능)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006468",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "출산통합처리신청서"
+   ],
+   "office": "거주지 동주민센터",
+   "apply_method": "부 또는 모가 거주지 동주민센터 방문 신청 또는 정부24 온라인 신청",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006479",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": "2027-01-31",
+   "docs": [
+    "신청서"
+   ],
+   "office": "관할 자치구",
+   "apply_method": "방문, E-mail. 신청 희망 상점은 신청서 및 관련 증빙서류를 갖추어 관할 자치구에 신청하며, 각 자치구는 관내 복지시설 등 관계기관과 협력하여 대상 상점을 발굴할 수 있음",
+   "period_type": "fixed"
+  },
+  {
+   "serv_id": "WLF00006484",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "동의서"
+   ],
+   "office": "서울 재학학교",
+   "apply_method": "방문 - 서울 재학학교로 신청서 및 동의서 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006485",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006487",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "출생보고서(출생증명서)",
+    "진료비영수증",
+    "진료비세부내역서",
+    "주민등록등(초)본(최근 1개월 이내 발급분)",
+    "입금계좌 통장사본"
+   ],
+   "office": "동대문구 아가사랑센터 (동대문구 답십리로1길10 힐스테이트 청량리 더퍼스트 102동 2층)",
+   "apply_method": "동대문구 아가사랑센터 방문신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006488",
+   "source": "local",
+   "min_age": 70,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동작구치매안심센터",
+   "apply_method": "방문, 전화",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006492",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "탄생육아 몽땅정보(umppa.seoul.go.kr)",
+   "apply_method": "탄생육아 몽땅정보(umppa.seoul.go.kr)에서 온라인으로 산모 본인이 직접 신청해야 하며, 본인 외 대리신청은 불가합니다.",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006511",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "직접 지원(별도 신청사항 없음)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006516",
+   "source": "local",
+   "min_age": 9,
+   "max_age": 24,
+   "deadline": null,
+   "docs": null,
+   "office": "종로구청 사회복지과 또는 각 주민등록 주소지 동주민센터",
+   "apply_method": "방문 접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006518",
+   "source": "local",
+   "min_age": 18,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "플랫폼 배달노동자 산재보험료 지원 신청서"
+   ],
+   "office": "영등포구청 일자리경제과(구청 별관 A동 1층)",
+   "apply_method": "전용 메일(ydpnodong@ydp.go.kr)로 서류를 제출하거나 영등포구청 일자리경제과로 방문하여 서류 제출 후 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006521",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동대문구청 장애인복지과",
+   "apply_method": "전화 문의 (동대문구청 장애인복지과로 문의)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006522",
+   "source": "local",
+   "min_age": 18,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "지원신청서",
+    "항암치료 중 탈모가 발생했다는 의사 소견서",
+    "가발 구입비 영수증",
+    "통장사본"
+   ],
+   "office": "동대문구보건소 보건행정과(4층)",
+   "apply_method": "방문 신청, 구비서류 직접 제출",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006563",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006571",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "동 주민센터, 구 홈페이지(온라인)",
+   "apply_method": "동 주민센터 방문 신청(출생 신고 시 출산서비스 통합 처리 신청) 또는 구 홈페이지 온라인 신청(온라인·구청·타 지역 출생 신고자). 지급방법: 신청 → 카카오 알림톡(전용몰 주소+인증번호 수신) → 회원가입 및 본인 인증 → 육아용품 선택·주문 → 택배 수령",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006578",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "거주지 관할 동주민센터 또는 보건소",
+   "apply_method": "서울형 입원 생활비 지원 사업 누리집(sickleave.seoul.go.kr)에서 온라인 및 모바일 신청, 거주지 관할 동주민센터 또는 보건소 직접 방문 신청, 팩스 또는 등기우편 신청 가능",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006579",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울마음편의점",
+   "apply_method": "서울마음편의점 방문 후 외로움 자가진단을 포함한 이용자 등록 후 이용",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006584",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "서울시 청년몽땅정보통(youth.seoul.go.kr)",
+   "apply_method": "서울시 청년몽땅정보통(youth.seoul.go.kr)에서 온라인 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006588",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "지원신청서",
+    "주민등록등본",
+    "입학증명서(또는 학생증)"
+   ],
+   "office": "서울특별시 관악구 청년문화국 교육지원과",
+   "apply_method": "교육지원과에 신청서류 제출(방문 또는 담당자 이메일)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006609",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신분증",
+    "임신확인서(출산예정일 확인되는 부분 첨부)"
+   ],
+   "office": "동대문구보건소 예방접종실",
+   "apply_method": "백신 보유 여부 확인 후 구비서류를 지참하여 동대문구보건소 예방접종실 방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006620",
+   "source": "local",
+   "min_age": 3,
+   "max_age": 5,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "외국인등록증"
+   ],
+   "office": "유아가 다니는 유치원",
+   "apply_method": "방문: 외국인 등록이 된 유아를 사실상 보호하고 있는 자가 유치원에 방문하여 신청서 제출, 유치원 신청 내역 확인 및 지원금 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006641",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "방문, 전화(보험사 콜센터 02-2038-0828에 유선 신청)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006643",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "미숙아 호흡기세포융합바이러스 예방접종비 지원 신청서"
+   ],
+   "office": "서울특별시 성동구 보건소 건강관리과",
+   "apply_method": "온라인 신청(성동구청 신속예약 누리집) 또는 방문신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006653",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "서울특별시 공공서비스 예약 사이트(온라인), 산후조리원(방문 상담)",
+   "apply_method": "인터넷(서울특별시 공공서비스 예약 사이트)에서 1차 사전 예약 신청 후, 1~4순위 순 및 동일 순위 내 접수시간 순으로 1차 예약 배정. 배정자는 산후조리원에서 개별 연락 및 방문 상담 후 최종 예약 확정",
+   "period_type": "relative"
+  },
+  {
+   "serv_id": "WLF00006656",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "관악구보건소",
+   "apply_method": "관악구보건소 방문신청(사전 연락 필수), 관악구 한의약 난임치료 지정한의원 이용",
+   "period_type": "always"
+  },
+  {
+   "serv_id": "WLF00006678",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "종로구청 홈페이지에서 관련 양식 다운로드 및 작성 후 담당자 이메일로 제출(E-mail)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006680",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "신청서",
+    "개인정보제공동의서"
+   ],
+   "office": "서울특별시 강동구 복지가족국 장애인복지과",
+   "apply_method": "방문, E-mail",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006681",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "온라인 신청(성동구청 홈페이지 - 신속예약), E-mail",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006688",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "주소지 관할 동주민센터",
+   "apply_method": "주소지 관할 동주민센터에 직접 방문하거나 이메일 신청(강동구청 홈페이지에서 '강동구 고등학생 교육 이용료 지원' 검색하여 참고)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006697",
+   "source": "local",
+   "min_age": 20,
+   "max_age": 49,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "온라인 신청(https://umppa.seoul.go.kr)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006700",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": "2026-08-20",
+   "docs": null,
+   "office": null,
+   "apply_method": "방문, 우편, E-mail",
+   "period_type": "fixed"
+  },
+  {
+   "serv_id": "WLF00006701",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": "2026-08-20",
+   "docs": [
+    "보조기기 처방전"
+   ],
+   "office": "신청인 거주 자치구 기준 해당 권역 서울시보조기기센터(4개소)",
+   "apply_method": "신청인 거주 자치구 기준 해당 권역 서울시보조기기센터(4개소)로 우편, 이메일, 방문 접수",
+   "period_type": "fixed"
+  },
+  {
+   "serv_id": "WLF00006702",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": "자치구 (설치대상 가구 신청·접수 담당)",
+   "apply_method": "방문 (자치구에서 설치대상 가구 신청·접수·선정)",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006703",
+   "source": "local",
+   "min_age": 30,
+   "max_age": 59,
+   "deadline": null,
+   "docs": null,
+   "office": "서울커리업 통합시스템(www.seoulwomanup.or.kr)",
+   "apply_method": "인터넷 신청: 서울커리업 통합시스템(www.seoulwomanup.or.kr)으로 신청·접수",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006708",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "서울영테크 홈페이지(https://youth.seoul.go.kr/youngtech/main)",
+   "apply_method": "인터넷 - 서울영테크 홈페이지(https://youth.seoul.go.kr/youngtech/main)에서 재무상담 및 금융교육 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006775",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "관악구청 홈페이지(온라인 접수)",
+   "apply_method": "정해진 신청기간 내에 구청 홈페이지에서 온라인으로 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006776",
+   "source": "local",
+   "min_age": 19,
+   "max_age": 39,
+   "deadline": null,
+   "docs": null,
+   "office": "관악구청 홈페이지(온라인 접수)",
+   "apply_method": "관악구청 홈페이지에서 온라인으로 신청",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006781",
+   "source": "local",
+   "min_age": 10,
+   "max_age": null,
+   "deadline": null,
+   "docs": null,
+   "office": null,
+   "apply_method": "모바일앱: 손목닥터9988 앱 회원가입 및 서울시민/직장인 인증 완료",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006784",
+   "source": "local",
+   "min_age": null,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "발달장애인 생활안심보험 가입 신청서",
+    "개인정보제공 동의서"
+   ],
+   "office": null,
+   "apply_method": "방문",
+   "period_type": "unknown"
+  },
+  {
+   "serv_id": "WLF00006795",
+   "source": "local",
+   "min_age": 18,
+   "max_age": null,
+   "deadline": null,
+   "docs": [
+    "개인예산계획서"
+   ],
+   "office": "서울특별시 복지실 복지기획관 장애인복지과",
+   "apply_method": "온라인접수 또는 현장접수(방문, E-mail)",
+   "period_type": "unknown"
+  }
+ ],
+ "errors": []
+}
