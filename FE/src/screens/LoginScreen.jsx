@@ -26,7 +26,7 @@ export default function LoginScreen({ onLogin, error }) {
         </div>
       }
     >
-      <p className="ws-login-desc">어려운 안내문부터 준비 서류까지.<br />길잡이 복길이가 함께 걸어갈게요.</p>
+      <p className="ws-login-desc">어려운 안내문부터 준비 서류까지.<br />길잡이 <strong>복길이</strong>가 함께 걸어갈게요.</p>
       <div className="ws-login-art" aria-hidden="true">
         <span className="ws-login-halo ws-login-halo-a" />
         <span className="ws-login-halo ws-login-halo-b" />
@@ -36,7 +36,6 @@ export default function LoginScreen({ onLogin, error }) {
           <circle cx="258" cy="62" r="7" />
         </svg>
         <div className="wm-bokgil-guide"><AnimatedBokgil /></div>
-        <div className="wm-bokgil-path" />
         {STEPS.map(([n, t, d]) => (
           <div key={n} className={`ws-login-float ws-login-float-${n}`}>
             <span><strong>{t}</strong>{d}</span>

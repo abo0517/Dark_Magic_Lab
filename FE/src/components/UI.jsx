@@ -1,4 +1,3 @@
-import AnimatedBokgil from './AnimatedBokgil.jsx'
 
 export function Button({ kind = 'primary', type = 'button', className = '', ...props }) {
   return <button type={type} className={`ws-ui-button ws-ui-${kind} ${className}`.trim()} {...props} />
@@ -19,7 +18,7 @@ export function Screen({ title, onBack, onHome, header, children, footer, varian
       <div className="ws-ui-shell">
         <header className="ws-ui-masthead">
           <button type="button" className="ws-ui-brand" onClick={() => onHome?.()} aria-label="복지메이트 홈으로">
-            <span className="ws-ui-brand-avatar"><AnimatedBokgil still /></span>
+            <span className="ws-ui-brand-avatar"><img src={`${import.meta.env.BASE_URL}codex-images/bokgil-face.png`} alt="" /></span>
             <span className="ws-ui-wordmark">
               <span className="ws-ui-wordmark-light">복지</span>
               <span className="ws-ui-wordmark-strong">메이트</span>
