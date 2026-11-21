@@ -40,9 +40,9 @@
 
 ### 3.3 `analyze` Edge Function
 - 이미지/PDF 안내문을 받아 모델 담당자와 확정한 JSON 응답을 프론트에 반환한다.
-- 개발계획상 기본 구조는 `{ "easySummary": "...", "source": "...", "programs": [] }`이며, 실제 세부 필드는 프론트 `mockResult` 명세와 모델 팀의 확정 스키마를 확인한다.
-- 모델 선택은 **미확정**이다. `개발계획.md`는 Claude Vision을, `CODEX.md`는 OpenAI API를 명시한다. 팀이 공급자·모델명·요청 형식을 확정하기 전에는 특정 제공업체 전용 코드를 고정하지 않는다.
-- 오픈소스 PP-OCRv5는 비교 평가 후 채택 여부를 결정한다. 별도 Python OCR 서버를 승인 없이 추가하지 않는다.
+- 응답 형식은 `개발계획.md`의 "analyze 출력 데이터"를 따른다: `{ "easySummary", "programs"[19개 키], "hasPersonalInfo" }`. `source`는 프론트가 채우므로 래퍼나 필드를 추가하지 않는다.
+- 모델은 확정되었다: Claude(`claude-sonnet-5-5`). `analyze`는 AI를 직접 부르지 않고 모델 서버 `POST {MODEL_SERVER_URL}/analyze`(multipart 파일 필드 `file`, 헤더 `X-Shared-Secret`)로 전달만 한다. `MODEL_SERVER_URL`과 `MODEL_SHARED_SECRET`은 Edge Function secret에 둔다.
+- OCR은 쓰지 않는다. 모델 서버(Python, 팀 컴퓨터)의 사용은 승인되었다. 서버가 돌려주는 오류 코드(`401 UNAUTHORIZED`, `413 TOO_LARGE`, `415 UNSUPPORTED`, `422 UNREADABLE`, `502 UPSTREAM_ERROR`, `504 TIMEOUT`)를 그대로 프론트에 전달하고, 서버에 닿지 않으면 502나 504로 구분한다.
 - 모델 응답은 JSON 스키마 검증을 거친다. 불완전하거나 잘못된 출력은 명확한 오류로 처리한다.
 - AI는 안내문에서 근거를 추출·정리한다. 대상 여부 최종 판정은 계획에 명시된 `judge()` 등 **결정론적 로직**에 맡긴다. 해당 함수가 프론트 또는 모델 폴더에 있으면 수정하지 않고 인터페이스를 협의한다.
 - 원문에 없는 기한·대상·서류·제출처를 만들어내지 않는다. 판독 불가 시 합의된 `UNREADABLE` 상태를 반환한다.
@@ -91,7 +91,7 @@
 
 ## 6. Supabase 보안 및 비밀키
 
-- `DATA_GO_KR_KEY`와 AI API 키는 Supabase Edge Function secrets로 관리한다. 예시 이름은 `ANTHROPIC_API_KEY` 또는 `OPENAI_API_KEY`이며 **최종 제공업체 확정 후 하나를 선택**한다.
+- `DATA_GO_KR_KEY`와 AI API 키(`ANTHROPIC_API_KEY`, AI는 Claude로 확정)는 Supabase Edge Function secrets로 관리한다. `analyze`는 모델 서버로 전달만 하므로 `MODEL_SERVER_URL`, `MODEL_SHARED_SECRET`도 secret으로 둔다. 키는 브라우저에 노출하지 않는다.
 - `service_role` 등 관리자 권한 키는 브라우저에 노출하지 않는다. Supabase 공개 anon/publishable 키는 RLS가 올바르게 구성된 경우에만 프론트에서 사용한다.
 - 공개 읽기 전용 정책과 동기화 관리자 권한을 분리한다.
 - Edge Function의 인증 검증 설정을 배포 전에 확인한다. `sync-policies`는 단순히 비공개 URL이라는 이유로 안전하다고 가정하지 않는다.
@@ -126,8 +126,8 @@
 - `sync-policies`를 재실행해도 중복 행이 생기지 않아야 한다.
 - 중앙 100회·지자체 1,000회 예산을 넘지 않도록 실제 요청 수를 기록한다.
 - 공개 사용자는 정책 SELECT만 가능하고 쓰기·관리자 동기화는 거부되어야 한다.
-- `analyze`는 샘플 10장으로 검증한다. 기한·나이·서류·제출처 네 필드의 정확성을 평가하고 흐린 입력의 `UNREADABLE` 처리를 확인한다.
-- 개발계획의 기준인 **10장 중 8장 이상 정확 추출**을 목표로 하되, 실제 시험 결과를 숨기지 않는다.
+- `analyze`는 샘플 11장으로 검증한다. 기한·나이·서류·제출처 네 필드의 정확성을 평가하고 흐린 입력의 `UNREADABLE` 처리를 확인한다.
+- 개발계획의 기준인 **11장 중 8장 이상 정확 추출**을 목표로 하되, 실제 시험 결과를 숨기지 않는다.
 - 브라우저 네트워크 요청과 배포 번들에 비밀키가 없는지 확인한다.
 - 실제 실행하지 않은 테스트는 통과했다고 보고하지 않는다.
 
@@ -142,7 +142,7 @@
 
 ## 11. 착수 전 확인할 미확정 사항
 
-- AI 제공업체: `개발계획.md`의 Claude Vision과 `CODEX.md`의 OpenAI API 중 최종 선택.
+- AI 제공업체: Claude로 확정(모델 서버가 호출). `CODEX.md`의 OpenAI 문구는 정정되었다.
 - 실제 프론트 `mockResult` 전체 스키마 및 `judge()`의 위치와 입력·출력 계약.
 - 공공데이터 API의 필수 요청 파라미터, 실제 XML 응답, 인증키 인코딩 방식.
 - 기존 회원/소셜 로그인/체크리스트 DB 기능을 해커톤 범위에 포함할지 여부.
